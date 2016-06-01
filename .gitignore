@@ -1,0 +1,8 @@
+build/
+MediaStorage.xcodeproj/*.pbxuser
+MediaStorage.xcodeproj/*.mode*
+MediaStorage.xcodeproj/xcuserdata/
+MediaStorage.xcodeproj/project.xcworkspace/
+
+.DS_Store
+*.swp
