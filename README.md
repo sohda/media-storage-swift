@@ -51,7 +51,7 @@ end
 ```sh
 $ git clone --recursive https://github.com/ricohapi/MediaStorage.git
 ```
-* Open the new `media-storage-swift` folder, and drag `MediaStorage.xcodeproj` into the Project Navigator of your project.
+* Open the new `media-storage-swift` directory, and drag `MediaStorage.xcodeproj` into the Project Navigator of your project.
 
     > It should appear nested underneath your application's blue project icon.
     > Whether it is above or below all the other Xcode groups does not matter.
