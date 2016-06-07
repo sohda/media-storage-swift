@@ -6,7 +6,7 @@
 ```sh
 $ git clone --recursive https://github.com/ricohapi/MediaStorage.git
 ```
-* Open `MediaStorageSample.xcworkspace` in the `MediaStorageSample` directory.
+* Open `MediaStorage.xcworkspace` in the `MediaStorage` directory.
 * Fill your Credentials in `ViewController.swift`.
     * `"### enter your client ID ###"` : replace with your client ID.
     * `"### enter your client secret ###"` : replace with your client secret.
