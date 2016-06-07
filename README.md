@@ -16,29 +16,52 @@ You'll also need
 
 If you don't have them, please register yourself and your client from [THETA Developers Website](http://contest.theta360.com/).
 
-## Setup
-* Clone Ricoh Media Storage for Swift and [Ricoh Auth Client for Swift](https://github.com/ricohapi/auth-swift) by running the following command:
+## Dependencies
+* [Ricoh Auth Client for Swift](https://github.com/ricohapi/auth-swift) 1.0+
+
+## Installation
+This section shows you two different methods to install Ricoh Media Storage for Swift in your application.  
+See [Media Storage Sample](https://github.com/ricohapi/media-storage-swift/tree/master/MediaStorageSample#media-storage-sample) to try out a sample of Ricoh Media Storage for Swift.
+
+### With CocoaPods
+* If it is your first time to use [CocoaPods](https://cocoapods.org/), run the following commands to set it up.
 ```sh
-$ git clone https://github.com/ricohapi/media-storage-swift.git
-$ git clone https://github.com/ricohapi/auth-swift.git
+$ gem install cocoapods
+$ pod setup
 ```
 
-* Open the `MediaStorage.xcodeproj` in the new `media-storage-swift` folder.
-* Open the new `auth-swift` folder, and drag the `RicohAPIAuth.xcodeproj` into the Project Navigator of `MediaStorage` project.
+* Move to your project directory.
+* Create a Podfile by running `pod init` ( if you do not have one yet ), and specify `MediaStorage` as follows:
+```sh
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'YourAppName' do
+  pod 'MediaStorage', '~> 1.0.0'
+end
+```
+* Run `pod install` to install `MediaStorage`.
+* Open your project's workspace.
+* Choose your application scheme and run it to load the MediaStorage module.
+* Install completed! See [Sample Flow](https://github.com/ricohapi/media-storage-swift#sample-flow) for a coding example.
+
+### Without CocoaPods
+* Clone Ricoh Media Storage for Swift by running the following commands:
+```sh
+$ git clone --recursive https://github.com/ricohapi/MediaStorage.git
+```
+* Open the new `media-storage-swift` folder, and drag `MediaStorage.xcodeproj` into the Project Navigator of your project.
 
     > It should appear nested underneath your application's blue project icon.
     > Whether it is above or below all the other Xcode groups does not matter.
 
 * Choose RicohAPIAuth scheme at the scheme menu of Xcode and run it.
-* Now you can try [Media Storage Sample](https://github.com/ricohapi/media-storage-swift/tree/master/MediaStorageSample).
-
-## Installation
-
-* Open the new `media-storage-swift` folder, and drag the `MediaStorage.xcodeproj` into the Project Navigator of your application's Xcode project.
-* Choose RicohAPIAuth scheme at the scheme menu of Xcode and run it. Same for MediaStorage scheme.
+* Choose MediaStorage scheme at the scheme menu of Xcode and run it.
+* Choose your application scheme and run it to load the MediaStorage module.
+* Install completed! See [Sample Flow](https://github.com/ricohapi/media-storage-swift#sample-flow) for a coding example.
 
 ## Sample Flow
-
 ```swift
 // Import
 import RicohAPIAuth
