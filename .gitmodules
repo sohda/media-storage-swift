@@ -1,0 +1,3 @@
+[submodule "RicohAPIAuth"]
+	path = RicohAPIAuth
+	url = https://github.com/ricohapi/auth-swift.git
