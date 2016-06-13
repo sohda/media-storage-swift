@@ -57,7 +57,6 @@ $ git clone --recursive https://github.com/ricohapi/MediaStorage.git
     > Whether it is above or below all the other Xcode groups does not matter.
 
 * Choose RicohAPIAuth scheme at the scheme menu of Xcode and run it.
-* Choose MediaStorage scheme at the scheme menu of Xcode and run it.
 * Choose your application scheme and run it to load the MediaStorage module.
 * Install completed! See [Sample Flow](https://github.com/ricohapi/media-storage-swift#sample-flow) for a coding example.
 
