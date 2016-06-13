@@ -31,17 +31,17 @@ $ pod setup
 ```
 
 * Go to your project directory.
-* Create a Podfile by running `pod init` ( if you do not have one yet ), and specify `RicohapiMstorage` as follows:
+* Create a Podfile by running `pod init` ( if you do not have one yet ), and specify `RicohAPIMstorage` as follows:
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 
 target 'YourAppName' do
-  pod 'RicohapiMstorage', '~> 2.0.0'
+  pod 'RicohAPIMstorage', '~> 2.0.0'
 end
 ```
-* Run `pod install` to install `RicohapiMstorage`.
+* Run `pod install` to install `RicohAPIMstorage`.
 * Open your project's workspace.
 * Choose your application scheme and run it to load the MediaStorage module.
 * Install completed! See [Sample Flow](https://github.com/ricohapi/media-storage-swift#sample-flow) for a coding example.
