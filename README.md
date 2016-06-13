@@ -38,7 +38,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'YourAppName' do
-  pod 'RicohapiMstorage', '~> 1.0.1', :git => 'https://github.com/ricohapi/media-storage-swift.git'
+  pod 'RicohapiMstorage', '~> 2.0.0'
 end
 ```
 * Run `pod install` to install `RicohapiMstorage`.
