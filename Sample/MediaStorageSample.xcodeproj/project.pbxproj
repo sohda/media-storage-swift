@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5949A5071D0FF93300238312 /* MediaStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A0D65F1D0FEFEB0009407B /* MediaStorage.framework */; };
+		5949A5081D0FF93300238312 /* MediaStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59A0D65F1D0FEFEB0009407B /* MediaStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		595215571D0FE4A2006B63B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595215561D0FE4A2006B63B1 /* AppDelegate.swift */; };
 		595215591D0FE4A2006B63B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595215581D0FE4A2006B63B1 /* ViewController.swift */; };
 		5952155C1D0FE4A2006B63B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5952155A1D0FE4A2006B63B1 /* Main.storyboard */; };
 		5952155E1D0FE4A2006B63B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5952155D1D0FE4A2006B63B1 /* Assets.xcassets */; };
 		595215611D0FE4A2006B63B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5952155F1D0FE4A2006B63B1 /* LaunchScreen.storyboard */; };
-		59C294481D0FF3A600F5EA43 /* MediaStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A0D65F1D0FEFEB0009407B /* MediaStorage.framework */; };
-		59C294491D0FF3A600F5EA43 /* MediaStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59A0D65F1D0FEFEB0009407B /* MediaStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5949A5091D0FF93300238312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59A0D6571D0FEFEB0009407B /* MediaStorage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BEA95281CCDFFAD00819DFA;
+			remoteInfo = MediaStorage;
+		};
 		59A0D65E1D0FEFEB0009407B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 59A0D6571D0FEFEB0009407B /* MediaStorage.xcodeproj */;
@@ -31,23 +38,16 @@
 			remoteGlobalIDString = 4BEA95321CCDFFAD00819DFA;
 			remoteInfo = MediaStorageTests;
 		};
-		59C2944A1D0FF3A600F5EA43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 59A0D6571D0FEFEB0009407B /* MediaStorage.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4BEA95281CCDFFAD00819DFA;
-			remoteInfo = MediaStorage;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		59C2944C1D0FF3A600F5EA43 /* Embed Frameworks */ = {
+		5949A50B1D0FF93300238312 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				59C294491D0FF3A600F5EA43 /* MediaStorage.framework in Embed Frameworks */,
+				5949A5081D0FF93300238312 /* MediaStorage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59C294481D0FF3A600F5EA43 /* MediaStorage.framework in Frameworks */,
+				5949A5071D0FF93300238312 /* MediaStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,12 +126,12 @@
 				5952154F1D0FE4A2006B63B1 /* Sources */,
 				595215501D0FE4A2006B63B1 /* Frameworks */,
 				595215511D0FE4A2006B63B1 /* Resources */,
-				59C2944C1D0FF3A600F5EA43 /* Embed Frameworks */,
+				5949A50B1D0FF93300238312 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				59C2944B1D0FF3A600F5EA43 /* PBXTargetDependency */,
+				5949A50A1D0FF93300238312 /* PBXTargetDependency */,
 			);
 			name = MediaStorageSample;
 			productName = MediaStorageSample;
@@ -220,10 +220,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		59C2944B1D0FF3A600F5EA43 /* PBXTargetDependency */ = {
+		5949A50A1D0FF93300238312 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MediaStorage;
-			targetProxy = 59C2944A1D0FF3A600F5EA43 /* PBXContainerItemProxy */;
+			targetProxy = 5949A5091D0FF93300238312 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

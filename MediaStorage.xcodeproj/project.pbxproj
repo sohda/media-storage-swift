@@ -13,6 +13,7 @@
 		4BEA95331CCDFFAD00819DFA /* MediaStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEA95291CCDFFAD00819DFA /* MediaStorage.framework */; };
 		4BEA953A1CCDFFAD00819DFA /* MediaStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA95391CCDFFAD00819DFA /* MediaStorageTests.swift */; };
 		4BEA95481CCE022100819DFA /* MediaStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA95471CCE022100819DFA /* MediaStorage.swift */; };
+		5949A5051D0FF90A00238312 /* RicohAPIAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBC379B1D0A9093004CB7C7 /* RicohAPIAuth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5949A5051D0FF90A00238312 /* RicohAPIAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
