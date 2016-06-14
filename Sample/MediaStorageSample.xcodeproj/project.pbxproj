@@ -12,6 +12,8 @@
 		5952155C1D0FE4A2006B63B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5952155A1D0FE4A2006B63B1 /* Main.storyboard */; };
 		5952155E1D0FE4A2006B63B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5952155D1D0FE4A2006B63B1 /* Assets.xcassets */; };
 		595215611D0FE4A2006B63B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5952155F1D0FE4A2006B63B1 /* LaunchScreen.storyboard */; };
+		59C294481D0FF3A600F5EA43 /* MediaStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A0D65F1D0FEFEB0009407B /* MediaStorage.framework */; };
+		59C294491D0FF3A600F5EA43 /* MediaStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59A0D65F1D0FEFEB0009407B /* MediaStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +31,28 @@
 			remoteGlobalIDString = 4BEA95321CCDFFAD00819DFA;
 			remoteInfo = MediaStorageTests;
 		};
+		59C2944A1D0FF3A600F5EA43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59A0D6571D0FEFEB0009407B /* MediaStorage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BEA95281CCDFFAD00819DFA;
+			remoteInfo = MediaStorage;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		59C2944C1D0FF3A600F5EA43 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				59C294491D0FF3A600F5EA43 /* MediaStorage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		595215531D0FE4A2006B63B1 /* MediaStorageSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaStorageSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59C294481D0FF3A600F5EA43 /* MediaStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,10 +126,12 @@
 				5952154F1D0FE4A2006B63B1 /* Sources */,
 				595215501D0FE4A2006B63B1 /* Frameworks */,
 				595215511D0FE4A2006B63B1 /* Resources */,
+				59C2944C1D0FF3A600F5EA43 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				59C2944B1D0FF3A600F5EA43 /* PBXTargetDependency */,
 			);
 			name = MediaStorageSample;
 			productName = MediaStorageSample;
@@ -192,6 +218,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59C2944B1D0FF3A600F5EA43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MediaStorage;
+			targetProxy = 59C2944A1D0FF3A600F5EA43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5952155A1D0FE4A2006B63B1 /* Main.storyboard */ = {
@@ -302,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MediaStorageSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.MediaStorageSample.MediaStorageSample";
@@ -313,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MediaStorageSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.MediaStorageSample.MediaStorageSample";
