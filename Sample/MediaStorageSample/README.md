@@ -7,7 +7,6 @@
 $ git clone --recursive https://github.com/ricohapi/MediaStorage.git
 ```
 * Open `MediaStorage.xcworkspace` in the `MediaStorage` directory.
-* Choose RicohAPIAuth scheme at the scheme menu of Xcode and run it.
 * Fill your Credentials in `ViewController.swift`.
     * `"### enter your client ID ###"` : replace with your client ID.
     * `"### enter your client secret ###"` : replace with your client secret.
