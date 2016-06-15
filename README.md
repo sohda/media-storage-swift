@@ -21,7 +21,7 @@ If you don't have them, please register yourself and your client from [THETA Dev
 
 ## Installation
 This section shows you two different methods to install Ricoh Media Storage for Swift in your application.  
-See [Media Storage Sample](https://github.com/ricohapi/media-storage-swift/tree/master/MediaStorageSample#media-storage-sample) to try out a sample of Ricoh Media Storage for Swift.
+See [Media Storage Sample](https://github.com/ricohapi/media-storage-swift/tree/master/Sample/MediaStorageSample#media-storage-sample) to try out a sample of Ricoh Media Storage for Swift.
 
 ### CocoaPods
 * If it is your first time to use [CocoaPods](https://cocoapods.org/), run the following commands to set it up.
@@ -43,28 +43,28 @@ end
 ```
 * Run `pod install` to install `RicohAPIMstorage`.
 * Open your project's workspace.
-* Choose your application scheme and run it to load the MediaStorage module.
+* Choose your application scheme and run it to load the RicohAPIMStorage module.
 * Install completed! See [Sample Flow](https://github.com/ricohapi/media-storage-swift#sample-flow) for a coding example.
 
 ### Manually
 * Clone Ricoh Media Storage for Swift by running the following commands:
 ```sh
-$ git clone --recursive https://github.com/ricohapi/MediaStorage.git
+$ git clone --recursive https://github.com/ricohapi/media-storage-swift.git
 ```
-* Open the new `media-storage-swift` directory, and drag `MediaStorage.xcodeproj` into the Project Navigator of your project.
+* Open the new `media-storage-swift` directory, and drag `RicohAPIMStorage.xcodeproj` into the Project Navigator of your project.
 
     > It should appear nested underneath your application's blue project icon.
     > Whether it is above or below all the other Xcode groups does not matter.
 
 * Choose RicohAPIAuth scheme at the scheme menu of Xcode and run it.
-* Choose your application scheme and run it to load the MediaStorage module.
+* Choose your application scheme and run it to load the RicohAPIMStorage module.
 * Install completed! See [Sample Flow](https://github.com/ricohapi/media-storage-swift#sample-flow) for a coding example.
 
 ## Sample Flow
 ```swift
 // Import
 import RicohAPIAuth
-import MediaStorage
+import RicohAPIMStorage
 
 // Set your Ricoh API Client Credentials
 var authClient = AuthClient(
@@ -79,8 +79,8 @@ var authClient = AuthClient(
         userPass: "<your_password>"
     )
 
-    // Initialize a MediaStorage object with the AuthClient object
-    let mstorage = MediaStorage(authClient: authClient)
+    // Initialize a RicohAPIMStorage object with the AuthClient object
+    let mstorage = RicohAPIMStorage(authClient: authClient)
 
     // Connect to the server
     mstorage.connect(){result, error in
@@ -121,7 +121,7 @@ authClient.setResourceOwnerCreds(
 
 ### Constructor
 ```swift
-var mstorage = MediaStorage(authClient: authClient)
+var mstorage = RicohAPIMStorage(authClient: authClient)
 ```
 
 ### Connect to the server
