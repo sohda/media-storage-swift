@@ -9,5 +9,7 @@ Sample/MediaStorageSample.xcodeproj/*.mode*
 Sample/MediaStorageSample.xcodeproj/xcuserdata/
 Sample/MediaStorageSample.xcodeproj/project.xcworkspace/
 
+RicohAPIMstorage.xcworkspace/xcuserdata
+
 .DS_Store
 *.swp
