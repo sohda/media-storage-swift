@@ -49,7 +49,7 @@ end
 ### Manually
 * Clone Ricoh Media Storage for Swift by running the following commands:
 ```sh
-$ git clone --recursive https://github.com/ricohapi/MediaStorage.git
+$ git clone --recursive https://github.com/ricohapi/media-storage-swift.git
 ```
 * Open the new `media-storage-swift` directory, and drag `RicohAPIMStorage.xcodeproj` into the Project Navigator of your project.
 
