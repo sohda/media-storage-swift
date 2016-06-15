@@ -4,5 +4,10 @@ MediaStorage.xcodeproj/*.mode*
 MediaStorage.xcodeproj/xcuserdata/
 MediaStorage.xcodeproj/project.xcworkspace/
 
+Sample/MediaStorageSample.xcodeproj/*.pbxuser
+Sample/MediaStorageSample.xcodeproj/*.mode*
+Sample/MediaStorageSample.xcodeproj/xcuserdata/
+Sample/MediaStorageSample.xcodeproj/project.xcworkspace/
+
 .DS_Store
 *.swp

@@ -12,14 +12,8 @@
 		4BEA952C1CCDFFAD00819DFA /* MediaStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BEA952B1CCDFFAD00819DFA /* MediaStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BEA95331CCDFFAD00819DFA /* MediaStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEA95291CCDFFAD00819DFA /* MediaStorage.framework */; };
 		4BEA953A1CCDFFAD00819DFA /* MediaStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA95391CCDFFAD00819DFA /* MediaStorageTests.swift */; };
-		4BEA953E1CCDFFAD00819DFA /* MediaStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEA95291CCDFFAD00819DFA /* MediaStorage.framework */; };
-		4BEA953F1CCDFFAD00819DFA /* MediaStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEA95291CCDFFAD00819DFA /* MediaStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BEA95481CCE022100819DFA /* MediaStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA95471CCE022100819DFA /* MediaStorage.swift */; };
-		5993A4911CC5FE0300791844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993A4901CC5FE0300791844 /* AppDelegate.swift */; };
-		5993A4931CC5FE0300791844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993A4921CC5FE0300791844 /* ViewController.swift */; };
-		5993A4961CC5FE0300791844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5993A4941CC5FE0300791844 /* Main.storyboard */; };
-		5993A4981CC5FE0300791844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5993A4971CC5FE0300791844 /* Assets.xcassets */; };
-		5993A49B1CC5FE0300791844 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5993A4991CC5FE0300791844 /* LaunchScreen.storyboard */; };
+		5949A5051D0FF90A00238312 /* RicohAPIAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBC379B1D0A9093004CB7C7 /* RicohAPIAuth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,27 +31,6 @@
 			remoteGlobalIDString = 592B39311CF6D80200EA0C8C;
 			remoteInfo = RicohAPIAuthTests;
 		};
-		4BBC379E1D0A9093004CB7C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4BBC37921D0A9093004CB7C7 /* RicohAPIAuth.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 594F622D1CF8036F00B4B9DC;
-			remoteInfo = RicohAPIAuthSample;
-		};
-		4BBC37A01D0A9093004CB7C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4BBC37921D0A9093004CB7C7 /* RicohAPIAuth.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 594F62401CF8036F00B4B9DC;
-			remoteInfo = RicohAPIAuthSampleTests;
-		};
-		4BBC37A21D0A9093004CB7C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4BBC37921D0A9093004CB7C7 /* RicohAPIAuth.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 594F624B1CF8036F00B4B9DC;
-			remoteInfo = RicohAPIAuthSampleUITests;
-		};
 		4BEA95341CCDFFAD00819DFA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5993A4851CC5FE0300791844 /* Project object */;
@@ -65,49 +38,7 @@
 			remoteGlobalIDString = 4BEA95281CCDFFAD00819DFA;
 			remoteInfo = MediaStorage;
 		};
-		4BEA95361CCDFFAD00819DFA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5993A4851CC5FE0300791844 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5993A48C1CC5FE0300791844;
-			remoteInfo = MediaStorageSample;
-		};
-		4BEA953C1CCDFFAD00819DFA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5993A4851CC5FE0300791844 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4BEA95281CCDFFAD00819DFA;
-			remoteInfo = MediaStorage;
-		};
-		5993A4A21CC5FE0300791844 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5993A4851CC5FE0300791844 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5993A48C1CC5FE0300791844;
-			remoteInfo = MediaStorageSample;
-		};
-		5993A4AD1CC5FE0300791844 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5993A4851CC5FE0300791844 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5993A48C1CC5FE0300791844;
-			remoteInfo = MediaStorageSample;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		4BEA95451CCDFFAD00819DFA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4BEA953F1CCDFFAD00819DFA /* MediaStorage.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4B33F7FC1CE5749500814903 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -120,15 +51,6 @@
 		4BEA95391CCDFFAD00819DFA /* MediaStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaStorageTests.swift; sourceTree = "<group>"; };
 		4BEA953B1CCDFFAD00819DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BEA95471CCE022100819DFA /* MediaStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaStorage.swift; sourceTree = "<group>"; };
-		5993A48D1CC5FE0300791844 /* MediaStorageSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaStorageSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5993A4901CC5FE0300791844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5993A4921CC5FE0300791844 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5993A4951CC5FE0300791844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5993A4971CC5FE0300791844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5993A49A1CC5FE0300791844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5993A49C1CC5FE0300791844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5993A4A11CC5FE0300791844 /* MediaStorageSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaStorageSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5993A4AC1CC5FE0300791844 /* MediaStorageSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaStorageSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5949A5051D0FF90A00238312 /* RicohAPIAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,28 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5993A48A1CC5FE0300791844 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4BEA953E1CCDFFAD00819DFA /* MediaStorage.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5993A49E1CC5FE0300791844 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5993A4A91CC5FE0300791844 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -177,9 +78,6 @@
 			children = (
 				4BBC379B1D0A9093004CB7C7 /* RicohAPIAuth.framework */,
 				4BBC379D1D0A9093004CB7C7 /* RicohAPIAuthTests.xctest */,
-				4BBC379F1D0A9093004CB7C7 /* RicohAPIAuthSample.app */,
-				4BBC37A11D0A9093004CB7C7 /* RicohAPIAuthSampleTests.xctest */,
-				4BBC37A31D0A9093004CB7C7 /* RicohAPIAuthSampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				4BBC37921D0A9093004CB7C7 /* RicohAPIAuth.xcodeproj */,
-				5993A48F1CC5FE0300791844 /* MediaStorageSample */,
 				4BEA952A1CCDFFAD00819DFA /* MediaStorage */,
 				4BEA95381CCDFFAD00819DFA /* MediaStorageTests */,
 				5993A48E1CC5FE0300791844 /* Products */,
@@ -219,26 +116,10 @@
 		5993A48E1CC5FE0300791844 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5993A48D1CC5FE0300791844 /* MediaStorageSample.app */,
-				5993A4A11CC5FE0300791844 /* MediaStorageSampleTests.xctest */,
-				5993A4AC1CC5FE0300791844 /* MediaStorageSampleUITests.xctest */,
 				4BEA95291CCDFFAD00819DFA /* MediaStorage.framework */,
 				4BEA95321CCDFFAD00819DFA /* MediaStorageTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5993A48F1CC5FE0300791844 /* MediaStorageSample */ = {
-			isa = PBXGroup;
-			children = (
-				5993A4901CC5FE0300791844 /* AppDelegate.swift */,
-				5993A4921CC5FE0300791844 /* ViewController.swift */,
-				5993A4941CC5FE0300791844 /* Main.storyboard */,
-				5993A4971CC5FE0300791844 /* Assets.xcassets */,
-				5993A4991CC5FE0300791844 /* LaunchScreen.storyboard */,
-				5993A49C1CC5FE0300791844 /* Info.plist */,
-			);
-			path = MediaStorageSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,13 +130,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BEA952C1CCDFFAD00819DFA /* MediaStorage.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4BEA954B1CCE0AB600819DFA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,68 +166,11 @@
 			);
 			dependencies = (
 				4BEA95351CCDFFAD00819DFA /* PBXTargetDependency */,
-				4BEA95371CCDFFAD00819DFA /* PBXTargetDependency */,
 			);
 			name = MediaStorageTests;
 			productName = MediaStorageTests;
 			productReference = 4BEA95321CCDFFAD00819DFA /* MediaStorageTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5993A48C1CC5FE0300791844 /* MediaStorageSample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5993A4B51CC5FE0300791844 /* Build configuration list for PBXNativeTarget "MediaStorageSample" */;
-			buildPhases = (
-				5993A4891CC5FE0300791844 /* Sources */,
-				5993A48A1CC5FE0300791844 /* Frameworks */,
-				5993A48B1CC5FE0300791844 /* Resources */,
-				4BEA95451CCDFFAD00819DFA /* Embed Frameworks */,
-				4BEA954B1CCE0AB600819DFA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4BEA953D1CCDFFAD00819DFA /* PBXTargetDependency */,
-			);
-			name = MediaStorageSample;
-			productName = MediaStorageSample;
-			productReference = 5993A48D1CC5FE0300791844 /* MediaStorageSample.app */;
-			productType = "com.apple.product-type.application";
-		};
-		5993A4A01CC5FE0300791844 /* MediaStorageSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5993A4B81CC5FE0300791844 /* Build configuration list for PBXNativeTarget "MediaStorageSampleTests" */;
-			buildPhases = (
-				5993A49D1CC5FE0300791844 /* Sources */,
-				5993A49E1CC5FE0300791844 /* Frameworks */,
-				5993A49F1CC5FE0300791844 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5993A4A31CC5FE0300791844 /* PBXTargetDependency */,
-			);
-			name = MediaStorageSampleTests;
-			productName = MediaStorageSampleTests;
-			productReference = 5993A4A11CC5FE0300791844 /* MediaStorageSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5993A4AB1CC5FE0300791844 /* MediaStorageSampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5993A4BB1CC5FE0300791844 /* Build configuration list for PBXNativeTarget "MediaStorageSampleUITests" */;
-			buildPhases = (
-				5993A4A81CC5FE0300791844 /* Sources */,
-				5993A4A91CC5FE0300791844 /* Frameworks */,
-				5993A4AA1CC5FE0300791844 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5993A4AE1CC5FE0300791844 /* PBXTargetDependency */,
-			);
-			name = MediaStorageSampleUITests;
-			productName = MediaStorageSampleUITests;
-			productReference = 5993A4AC1CC5FE0300791844 /* MediaStorageSampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -372,18 +189,6 @@
 					4BEA95311CCDFFAD00819DFA = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = XRR6G7HH2Z;
-						TestTargetID = 5993A48C1CC5FE0300791844;
-					};
-					5993A48C1CC5FE0300791844 = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = VJ34NE8R3W;
-					};
-					5993A4A01CC5FE0300791844 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 5993A48C1CC5FE0300791844;
-					};
-					5993A4AB1CC5FE0300791844 = {
-						CreatedOnToolsVersion = 7.3;
 						TestTargetID = 5993A48C1CC5FE0300791844;
 					};
 				};
@@ -407,9 +212,6 @@
 			);
 			projectRoot = "";
 			targets = (
-				5993A48C1CC5FE0300791844 /* MediaStorageSample */,
-				5993A4A01CC5FE0300791844 /* MediaStorageSampleTests */,
-				5993A4AB1CC5FE0300791844 /* MediaStorageSampleUITests */,
 				4BEA95281CCDFFAD00819DFA /* MediaStorage */,
 				4BEA95311CCDFFAD00819DFA /* MediaStorageTests */,
 			);
@@ -431,27 +233,6 @@
 			remoteRef = 4BBC379C1D0A9093004CB7C7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4BBC379F1D0A9093004CB7C7 /* RicohAPIAuthSample.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = RicohAPIAuthSample.app;
-			remoteRef = 4BBC379E1D0A9093004CB7C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4BBC37A11D0A9093004CB7C7 /* RicohAPIAuthSampleTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RicohAPIAuthSampleTests.xctest;
-			remoteRef = 4BBC37A01D0A9093004CB7C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4BBC37A31D0A9093004CB7C7 /* RicohAPIAuthSampleUITests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RicohAPIAuthSampleUITests.xctest;
-			remoteRef = 4BBC37A21D0A9093004CB7C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -463,30 +244,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4BEA95301CCDFFAD00819DFA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5993A48B1CC5FE0300791844 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5993A49B1CC5FE0300791844 /* LaunchScreen.storyboard in Resources */,
-				5993A4981CC5FE0300791844 /* Assets.xcassets in Resources */,
-				5993A4961CC5FE0300791844 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5993A49F1CC5FE0300791844 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5993A4AA1CC5FE0300791844 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -514,29 +271,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5993A4891CC5FE0300791844 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5993A4931CC5FE0300791844 /* ViewController.swift in Sources */,
-				5993A4911CC5FE0300791844 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5993A49D1CC5FE0300791844 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5993A4A81CC5FE0300791844 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -545,46 +279,7 @@
 			target = 4BEA95281CCDFFAD00819DFA /* MediaStorage */;
 			targetProxy = 4BEA95341CCDFFAD00819DFA /* PBXContainerItemProxy */;
 		};
-		4BEA95371CCDFFAD00819DFA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5993A48C1CC5FE0300791844 /* MediaStorageSample */;
-			targetProxy = 4BEA95361CCDFFAD00819DFA /* PBXContainerItemProxy */;
-		};
-		4BEA953D1CCDFFAD00819DFA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4BEA95281CCDFFAD00819DFA /* MediaStorage */;
-			targetProxy = 4BEA953C1CCDFFAD00819DFA /* PBXContainerItemProxy */;
-		};
-		5993A4A31CC5FE0300791844 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5993A48C1CC5FE0300791844 /* MediaStorageSample */;
-			targetProxy = 5993A4A21CC5FE0300791844 /* PBXContainerItemProxy */;
-		};
-		5993A4AE1CC5FE0300791844 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5993A48C1CC5FE0300791844 /* MediaStorageSample */;
-			targetProxy = 5993A4AD1CC5FE0300791844 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5993A4941CC5FE0300791844 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5993A4951CC5FE0300791844 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5993A4991CC5FE0300791844 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5993A49A1CC5FE0300791844 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4BEA95401CCDFFAD00819DFA /* Debug */ = {
@@ -739,86 +434,6 @@
 			};
 			name = Release;
 		};
-		5993A4B61CC5FE0300791844 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
-				INFOPLIST_FILE = MediaStorageSample/Info.plist;
-				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.sample.MediaStorageSample";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-			};
-			name = Debug;
-		};
-		5993A4B71CC5FE0300791844 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
-				INFOPLIST_FILE = MediaStorageSample/Info.plist;
-				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.sample.MediaStorageSample";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		5993A4B91CC5FE0300791844 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MediaStorageSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.docs.MediaStorageSampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaStorageSample.app/MediaStorageSample";
-			};
-			name = Debug;
-		};
-		5993A4BA1CC5FE0300791844 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = MediaStorageSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.docs.MediaStorageSampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaStorageSample.app/MediaStorageSample";
-			};
-			name = Release;
-		};
-		5993A4BC1CC5FE0300791844 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = MediaStorageSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.docs.MediaStorageSampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = MediaStorageSample;
-			};
-			name = Debug;
-		};
-		5993A4BD1CC5FE0300791844 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = MediaStorageSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ricohapi.docs.MediaStorageSampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = MediaStorageSample;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -845,33 +460,6 @@
 			buildConfigurations = (
 				5993A4B31CC5FE0300791844 /* Debug */,
 				5993A4B41CC5FE0300791844 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5993A4B51CC5FE0300791844 /* Build configuration list for PBXNativeTarget "MediaStorageSample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5993A4B61CC5FE0300791844 /* Debug */,
-				5993A4B71CC5FE0300791844 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5993A4B81CC5FE0300791844 /* Build configuration list for PBXNativeTarget "MediaStorageSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5993A4B91CC5FE0300791844 /* Debug */,
-				5993A4BA1CC5FE0300791844 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5993A4BB1CC5FE0300791844 /* Build configuration list for PBXNativeTarget "MediaStorageSampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5993A4BC1CC5FE0300791844 /* Debug */,
-				5993A4BD1CC5FE0300791844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
