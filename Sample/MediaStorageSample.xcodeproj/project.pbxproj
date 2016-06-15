@@ -7,38 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5949A5071D0FF93300238312 /* MediaStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A0D65F1D0FEFEB0009407B /* MediaStorage.framework */; };
-		5949A5081D0FF93300238312 /* MediaStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59A0D65F1D0FEFEB0009407B /* MediaStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		595215571D0FE4A2006B63B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595215561D0FE4A2006B63B1 /* AppDelegate.swift */; };
 		595215591D0FE4A2006B63B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595215581D0FE4A2006B63B1 /* ViewController.swift */; };
 		5952155C1D0FE4A2006B63B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5952155A1D0FE4A2006B63B1 /* Main.storyboard */; };
 		5952155E1D0FE4A2006B63B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5952155D1D0FE4A2006B63B1 /* Assets.xcassets */; };
 		595215611D0FE4A2006B63B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5952155F1D0FE4A2006B63B1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5949A5091D0FF93300238312 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 59A0D6571D0FEFEB0009407B /* MediaStorage.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4BEA95281CCDFFAD00819DFA;
-			remoteInfo = MediaStorage;
-		};
-		59A0D65E1D0FEFEB0009407B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 59A0D6571D0FEFEB0009407B /* MediaStorage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4BEA95291CCDFFAD00819DFA;
-			remoteInfo = MediaStorage;
-		};
-		59A0D6601D0FEFEB0009407B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 59A0D6571D0FEFEB0009407B /* MediaStorage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4BEA95321CCDFFAD00819DFA;
-			remoteInfo = MediaStorageTests;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5949A50B1D0FF93300238312 /* Embed Frameworks */ = {
@@ -47,7 +21,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5949A5081D0FF93300238312 /* MediaStorage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +35,6 @@
 		5952155D1D0FE4A2006B63B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		595215601D0FE4A2006B63B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		595215621D0FE4A2006B63B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59A0D6571D0FEFEB0009407B /* MediaStorage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MediaStorage.xcodeproj; path = ../MediaStorage.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +42,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5949A5071D0FF93300238312 /* MediaStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +53,6 @@
 			children = (
 				595215551D0FE4A2006B63B1 /* MediaStorageSample */,
 				595215541D0FE4A2006B63B1 /* Products */,
-				59A0D6571D0FEFEB0009407B /* MediaStorage.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,15 +77,6 @@
 			path = MediaStorageSample;
 			sourceTree = "<group>";
 		};
-		59A0D6581D0FEFEB0009407B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				59A0D65F1D0FEFEB0009407B /* MediaStorage.framework */,
-				59A0D6611D0FEFEB0009407B /* MediaStorageTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,7 +92,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				5949A50A1D0FF93300238312 /* PBXTargetDependency */,
 			);
 			name = MediaStorageSample;
 			productName = MediaStorageSample;
@@ -164,35 +124,12 @@
 			mainGroup = 5952154A1D0FE4A1006B63B1;
 			productRefGroup = 595215541D0FE4A2006B63B1 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 59A0D6581D0FEFEB0009407B /* Products */;
-					ProjectRef = 59A0D6571D0FEFEB0009407B /* MediaStorage.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				595215521D0FE4A2006B63B1 /* MediaStorageSample */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		59A0D65F1D0FEFEB0009407B /* MediaStorage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MediaStorage.framework;
-			remoteRef = 59A0D65E1D0FEFEB0009407B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		59A0D6611D0FEFEB0009407B /* MediaStorageTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MediaStorageTests.xctest;
-			remoteRef = 59A0D6601D0FEFEB0009407B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		595215511D0FE4A2006B63B1 /* Resources */ = {
@@ -218,14 +155,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5949A50A1D0FF93300238312 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MediaStorage;
-			targetProxy = 5949A5091D0FF93300238312 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5952155A1D0FE4A2006B63B1 /* Main.storyboard */ = {
