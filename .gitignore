@@ -10,6 +10,7 @@ Sample/MediaStorageSample.xcodeproj/xcuserdata/
 Sample/MediaStorageSample.xcodeproj/project.xcworkspace/
 
 RicohAPIMstorage.xcworkspace/xcuserdata
+RicohAPIMstorage.xcworkspace/xcshareddata/*.xcscmblueprint
 
 .DS_Store
 *.swp
