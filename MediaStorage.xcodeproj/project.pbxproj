@@ -38,27 +38,6 @@
 			remoteGlobalIDString = 4BEA95281CCDFFAD00819DFA;
 			remoteInfo = MediaStorage;
 		};
-		59D802791D10F96D00ED4181 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4BBC37921D0A9093004CB7C7 /* RicohAPIAuth.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 594F622D1CF8036F00B4B9DC;
-			remoteInfo = RicohAPIAuthSample;
-		};
-		59D8027B1D10F96D00ED4181 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4BBC37921D0A9093004CB7C7 /* RicohAPIAuth.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 594F62401CF8036F00B4B9DC;
-			remoteInfo = RicohAPIAuthSampleTests;
-		};
-		59D8027D1D10F96D00ED4181 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4BBC37921D0A9093004CB7C7 /* RicohAPIAuth.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 594F624B1CF8036F00B4B9DC;
-			remoteInfo = RicohAPIAuthSampleUITests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +47,7 @@
 		4BEA95291CCDFFAD00819DFA /* MediaStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MediaStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BEA952B1CCDFFAD00819DFA /* MediaStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaStorage.h; sourceTree = "<group>"; };
 		4BEA952D1CCDFFAD00819DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BEA95321CCDFFAD00819DFA /* MediaStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BEA95321CCDFFAD00819DFA /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BEA95391CCDFFAD00819DFA /* MediaStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaStorageTests.swift; sourceTree = "<group>"; };
 		4BEA953B1CCDFFAD00819DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BEA95471CCE022100819DFA /* MediaStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaStorage.swift; sourceTree = "<group>"; };
@@ -99,14 +78,11 @@
 			children = (
 				4BBC379B1D0A9093004CB7C7 /* RicohAPIAuth.framework */,
 				4BBC379D1D0A9093004CB7C7 /* RicohAPIAuthTests.xctest */,
-				59D8027A1D10F96D00ED4181 /* RicohAPIAuthSample.app */,
-				59D8027C1D10F96D00ED4181 /* RicohAPIAuthSampleTests.xctest */,
-				59D8027E1D10F96D00ED4181 /* RicohAPIAuthSampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4BEA952A1CCDFFAD00819DFA /* MediaStorage */ = {
+		4BEA952A1CCDFFAD00819DFA /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				4BEA952B1CCDFFAD00819DFA /* MediaStorage.h */,
@@ -115,24 +91,24 @@
 				4B3EF57D1CE2C48600F2A74F /* MediaStorageRequest.swift */,
 				4B33F7FC1CE5749500814903 /* Extensions.swift */,
 			);
-			path = MediaStorage;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		4BEA95381CCDFFAD00819DFA /* MediaStorageTests */ = {
+		4BEA95381CCDFFAD00819DFA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				4BEA95391CCDFFAD00819DFA /* MediaStorageTests.swift */,
 				4BEA953B1CCDFFAD00819DFA /* Info.plist */,
 			);
-			path = MediaStorageTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		5993A4841CC5FE0300791844 = {
 			isa = PBXGroup;
 			children = (
 				4BBC37921D0A9093004CB7C7 /* RicohAPIAuth.xcodeproj */,
-				4BEA952A1CCDFFAD00819DFA /* MediaStorage */,
-				4BEA95381CCDFFAD00819DFA /* MediaStorageTests */,
+				4BEA952A1CCDFFAD00819DFA /* Source */,
+				4BEA95381CCDFFAD00819DFA /* Tests */,
 				5993A48E1CC5FE0300791844 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				4BEA95291CCDFFAD00819DFA /* MediaStorage.framework */,
-				4BEA95321CCDFFAD00819DFA /* MediaStorageTests.xctest */,
+				4BEA95321CCDFFAD00819DFA /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,9 +154,9 @@
 			productReference = 4BEA95291CCDFFAD00819DFA /* MediaStorage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4BEA95311CCDFFAD00819DFA /* MediaStorageTests */ = {
+		4BEA95311CCDFFAD00819DFA /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BEA95461CCDFFAD00819DFA /* Build configuration list for PBXNativeTarget "MediaStorageTests" */;
+			buildConfigurationList = 4BEA95461CCDFFAD00819DFA /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				4BEA952E1CCDFFAD00819DFA /* Sources */,
 				4BEA952F1CCDFFAD00819DFA /* Frameworks */,
@@ -191,9 +167,9 @@
 			dependencies = (
 				4BEA95351CCDFFAD00819DFA /* PBXTargetDependency */,
 			);
-			name = MediaStorageTests;
+			name = Tests;
 			productName = MediaStorageTests;
-			productReference = 4BEA95321CCDFFAD00819DFA /* MediaStorageTests.xctest */;
+			productReference = 4BEA95321CCDFFAD00819DFA /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -237,7 +213,7 @@
 			projectRoot = "";
 			targets = (
 				4BEA95281CCDFFAD00819DFA /* MediaStorage */,
-				4BEA95311CCDFFAD00819DFA /* MediaStorageTests */,
+				4BEA95311CCDFFAD00819DFA /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,27 +231,6 @@
 			fileType = wrapper.cfbundle;
 			path = RicohAPIAuthTests.xctest;
 			remoteRef = 4BBC379C1D0A9093004CB7C7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		59D8027A1D10F96D00ED4181 /* RicohAPIAuthSample.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = RicohAPIAuthSample.app;
-			remoteRef = 59D802791D10F96D00ED4181 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		59D8027C1D10F96D00ED4181 /* RicohAPIAuthSampleTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RicohAPIAuthSampleTests.xctest;
-			remoteRef = 59D8027B1D10F96D00ED4181 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		59D8027E1D10F96D00ED4181 /* RicohAPIAuthSampleUITests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RicohAPIAuthSampleUITests.xctest;
-			remoteRef = 59D8027D1D10F96D00ED4181 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -338,7 +293,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MediaStorage/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.MediaStorage";
@@ -361,7 +316,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MediaStorage/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.MediaStorage";
@@ -375,7 +330,7 @@
 		4BEA95421CCDFFAD00819DFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = MediaStorageTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.MediaStorageTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,7 +341,7 @@
 		4BEA95431CCDFFAD00819DFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = MediaStorageTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.MediaStorageTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,7 +446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BEA95461CCDFFAD00819DFA /* Build configuration list for PBXNativeTarget "MediaStorageTests" */ = {
+		4BEA95461CCDFFAD00819DFA /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BEA95421CCDFFAD00819DFA /* Debug */,
