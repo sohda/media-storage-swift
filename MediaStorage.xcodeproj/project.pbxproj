@@ -82,7 +82,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4BEA952A1CCDFFAD00819DFA /* MediaStorage */ = {
+		4BEA952A1CCDFFAD00819DFA /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				4BEA952B1CCDFFAD00819DFA /* MediaStorage.h */,
@@ -91,7 +91,7 @@
 				4B3EF57D1CE2C48600F2A74F /* MediaStorageRequest.swift */,
 				4B33F7FC1CE5749500814903 /* Extensions.swift */,
 			);
-			path = MediaStorage;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		4BEA95381CCDFFAD00819DFA /* Tests */ = {
@@ -107,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				4BBC37921D0A9093004CB7C7 /* RicohAPIAuth.xcodeproj */,
-				4BEA952A1CCDFFAD00819DFA /* MediaStorage */,
+				4BEA952A1CCDFFAD00819DFA /* Source */,
 				4BEA95381CCDFFAD00819DFA /* Tests */,
 				5993A48E1CC5FE0300791844 /* Products */,
 			);
@@ -293,7 +293,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MediaStorage/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.MediaStorage";
@@ -316,7 +316,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MediaStorage/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.MediaStorage";
