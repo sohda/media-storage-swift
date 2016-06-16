@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/tomoko/SVaaS/Tickets/neco112/media-storage-swift/Sample/RicohAPIMstorageSample.xcodeproj">
+      location = "group:Sample/RicohAPIMstorageSample.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/tomoko/SVaaS/Tickets/neco112/media-storage-swift/RicohAPIMstorage.xcodeproj">
+      location = "group:RicohAPIMstorage.xcodeproj">
    </FileRef>
 </Workspace>
