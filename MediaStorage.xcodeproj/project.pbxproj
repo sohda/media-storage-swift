@@ -38,6 +38,27 @@
 			remoteGlobalIDString = 4BEA95281CCDFFAD00819DFA;
 			remoteInfo = MediaStorage;
 		};
+		59D802791D10F96D00ED4181 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BBC37921D0A9093004CB7C7 /* RicohAPIAuth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 594F622D1CF8036F00B4B9DC;
+			remoteInfo = RicohAPIAuthSample;
+		};
+		59D8027B1D10F96D00ED4181 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BBC37921D0A9093004CB7C7 /* RicohAPIAuth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 594F62401CF8036F00B4B9DC;
+			remoteInfo = RicohAPIAuthSampleTests;
+		};
+		59D8027D1D10F96D00ED4181 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BBC37921D0A9093004CB7C7 /* RicohAPIAuth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 594F624B1CF8036F00B4B9DC;
+			remoteInfo = RicohAPIAuthSampleUITests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +99,9 @@
 			children = (
 				4BBC379B1D0A9093004CB7C7 /* RicohAPIAuth.framework */,
 				4BBC379D1D0A9093004CB7C7 /* RicohAPIAuthTests.xctest */,
+				59D8027A1D10F96D00ED4181 /* RicohAPIAuthSample.app */,
+				59D8027C1D10F96D00ED4181 /* RicohAPIAuthSampleTests.xctest */,
+				59D8027E1D10F96D00ED4181 /* RicohAPIAuthSampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,6 +255,27 @@
 			fileType = wrapper.cfbundle;
 			path = RicohAPIAuthTests.xctest;
 			remoteRef = 4BBC379C1D0A9093004CB7C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		59D8027A1D10F96D00ED4181 /* RicohAPIAuthSample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RicohAPIAuthSample.app;
+			remoteRef = 59D802791D10F96D00ED4181 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		59D8027C1D10F96D00ED4181 /* RicohAPIAuthSampleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RicohAPIAuthSampleTests.xctest;
+			remoteRef = 59D8027B1D10F96D00ED4181 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		59D8027E1D10F96D00ED4181 /* RicohAPIAuthSampleUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RicohAPIAuthSampleUITests.xctest;
+			remoteRef = 59D8027D1D10F96D00ED4181 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
