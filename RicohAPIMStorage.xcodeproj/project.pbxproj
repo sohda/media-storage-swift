@@ -10,7 +10,7 @@
 		4B33F7FD1CE5749500814903 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33F7FC1CE5749500814903 /* Extensions.swift */; };
 		4B3EF57E1CE2C48600F2A74F /* MediaStorageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF57D1CE2C48600F2A74F /* MediaStorageRequest.swift */; };
 		4BEA952C1CCDFFAD00819DFA /* MediaStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BEA952B1CCDFFAD00819DFA /* MediaStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BEA95331CCDFFAD00819DFA /* RicohAPIMstorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEA95291CCDFFAD00819DFA /* RicohAPIMstorage.framework */; };
+		4BEA95331CCDFFAD00819DFA /* RicohAPIMStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEA95291CCDFFAD00819DFA /* RicohAPIMStorage.framework */; };
 		4BEA953A1CCDFFAD00819DFA /* MediaStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA95391CCDFFAD00819DFA /* MediaStorageTests.swift */; };
 		4BEA95481CCE022100819DFA /* MediaStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEA95471CCE022100819DFA /* MediaStorage.swift */; };
 		5949A5051D0FF90A00238312 /* RicohAPIAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBC379B1D0A9093004CB7C7 /* RicohAPIAuth.framework */; };
@@ -44,7 +44,7 @@
 		4B33F7FC1CE5749500814903 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4B3EF57D1CE2C48600F2A74F /* MediaStorageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaStorageRequest.swift; sourceTree = "<group>"; };
 		4BBC37921D0A9093004CB7C7 /* RicohAPIAuth.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RicohAPIAuth.xcodeproj; path = RicohAPIAuth/RicohAPIAuth.xcodeproj; sourceTree = "<group>"; };
-		4BEA95291CCDFFAD00819DFA /* RicohAPIMstorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RicohAPIMstorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BEA95291CCDFFAD00819DFA /* RicohAPIMStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RicohAPIMStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BEA952B1CCDFFAD00819DFA /* MediaStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaStorage.h; sourceTree = "<group>"; };
 		4BEA952D1CCDFFAD00819DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BEA95321CCDFFAD00819DFA /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BEA95331CCDFFAD00819DFA /* RicohAPIMstorage.framework in Frameworks */,
+				4BEA95331CCDFFAD00819DFA /* RicohAPIMStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 		5993A48E1CC5FE0300791844 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BEA95291CCDFFAD00819DFA /* RicohAPIMstorage.framework */,
+				4BEA95291CCDFFAD00819DFA /* RicohAPIMStorage.framework */,
 				4BEA95321CCDFFAD00819DFA /* Tests.xctest */,
 			);
 			name = Products;
@@ -136,9 +136,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4BEA95281CCDFFAD00819DFA /* RicohAPIMstorage */ = {
+		4BEA95281CCDFFAD00819DFA /* RicohAPIMStorage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BEA95441CCDFFAD00819DFA /* Build configuration list for PBXNativeTarget "RicohAPIMstorage" */;
+			buildConfigurationList = 4BEA95441CCDFFAD00819DFA /* Build configuration list for PBXNativeTarget "RicohAPIMStorage" */;
 			buildPhases = (
 				4BEA95241CCDFFAD00819DFA /* Sources */,
 				4BEA95251CCDFFAD00819DFA /* Frameworks */,
@@ -149,9 +149,9 @@
 			);
 			dependencies = (
 			);
-			name = RicohAPIMstorage;
+			name = RicohAPIMStorage;
 			productName = MediaStorage;
-			productReference = 4BEA95291CCDFFAD00819DFA /* RicohAPIMstorage.framework */;
+			productReference = 4BEA95291CCDFFAD00819DFA /* RicohAPIMStorage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4BEA95311CCDFFAD00819DFA /* Tests */ = {
@@ -193,7 +193,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5993A4881CC5FE0300791844 /* Build configuration list for PBXProject "RicohAPIMstorage" */;
+			buildConfigurationList = 5993A4881CC5FE0300791844 /* Build configuration list for PBXProject "RicohAPIMStorage" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -212,7 +212,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				4BEA95281CCDFFAD00819DFA /* RicohAPIMstorage */,
+				4BEA95281CCDFFAD00819DFA /* RicohAPIMStorage */,
 				4BEA95311CCDFFAD00819DFA /* Tests */,
 			);
 		};
@@ -276,7 +276,7 @@
 /* Begin PBXTargetDependency section */
 		4BEA95351CCDFFAD00819DFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4BEA95281CCDFFAD00819DFA /* RicohAPIMstorage */;
+			target = 4BEA95281CCDFFAD00819DFA /* RicohAPIMStorage */;
 			targetProxy = 4BEA95341CCDFFAD00819DFA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -296,8 +296,8 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.RicohAPIMstorage";
-				PRODUCT_NAME = RicohAPIMstorage;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.RicohAPIMStorage";
+				PRODUCT_NAME = RicohAPIMStorage;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -319,8 +319,8 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.RicohAPIMstorage";
-				PRODUCT_NAME = RicohAPIMstorage;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.RicohAPIMStorage";
+				PRODUCT_NAME = RicohAPIMStorage;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -437,7 +437,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4BEA95441CCDFFAD00819DFA /* Build configuration list for PBXNativeTarget "RicohAPIMstorage" */ = {
+		4BEA95441CCDFFAD00819DFA /* Build configuration list for PBXNativeTarget "RicohAPIMStorage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BEA95401CCDFFAD00819DFA /* Debug */,
@@ -455,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5993A4881CC5FE0300791844 /* Build configuration list for PBXProject "RicohAPIMstorage" */ = {
+		5993A4881CC5FE0300791844 /* Build configuration list for PBXProject "RicohAPIMStorage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5993A4B31CC5FE0300791844 /* Debug */,
