@@ -334,7 +334,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.MediaStorageTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RicohAPIMstorageSample.app/RicohAPIMstorageSample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RicohAPIMStorageSample.app/RicohAPIMStorageSample";
 			};
 			name = Debug;
 		};
@@ -345,7 +345,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.MediaStorageTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RicohAPIMstorageSample.app/RicohAPIMstorageSample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RicohAPIMStorageSample.app/RicohAPIMStorageSample";
 			};
 			name = Release;
 		};

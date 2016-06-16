@@ -4,10 +4,10 @@ RicohAPIMStorage.xcodeproj/*.mode*
 RicohAPIMStorage.xcodeproj/xcuserdata/
 RicohAPIMStorage.xcodeproj/project.xcworkspace/
 
-Sample/RicohAPIMstorageSample.xcodeproj/*.pbxuser
-Sample/RicohAPIMstorageSample.xcodeproj/*.mode*
-Sample/RicohAPIMstorageSample.xcodeproj/xcuserdata/
-Sample/RicohAPIMstorageSample.xcodeproj/project.xcworkspace/
+Sample/RicohAPIMStorageSample.xcodeproj/*.pbxuser
+Sample/RicohAPIMStorageSample.xcodeproj/*.mode*
+Sample/RicohAPIMStorageSample.xcodeproj/xcuserdata/
+Sample/RicohAPIMStorageSample.xcodeproj/project.xcworkspace/
 
 RicohAPIMStorage.xcworkspace/xcuserdata
 RicohAPIMStorage.xcworkspace/xcshareddata/*.xcscmblueprint
