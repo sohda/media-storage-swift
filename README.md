@@ -21,7 +21,7 @@ If you don't have them, please register yourself and your client from [THETA Dev
 
 ## Installation
 This section shows you two different methods to install Ricoh Media Storage for Swift in your application.  
-See [Media Storage Sample](https://github.com/ricohapi/media-storage-swift/tree/master/Sample/MediaStorageSample#media-storage-sample) to try out a sample of Ricoh Media Storage for Swift.
+See [Media Storage Sample](https://github.com/ricohapi/media-storage-swift/tree/master/Sample#media-storage-sample) to try out a sample of Ricoh Media Storage for Swift.
 
 ### CocoaPods
 * If it is your first time to use [CocoaPods](https://cocoapods.org/), run the following commands to set it up.
@@ -31,17 +31,17 @@ $ pod setup
 ```
 
 * Go to your project directory.
-* Create a Podfile by running `pod init` ( if you do not have one yet ), and specify `RicohAPIMstorage` as follows:
+* Create a Podfile by running `pod init` ( if you do not have one yet ), and specify `RicohAPIMStorage` as follows:
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 
 target 'YourAppName' do
-  pod 'RicohAPIMstorage', '~> 2.0.0'
+  pod 'RicohAPIMStorage', '~> 2.0.0'
 end
 ```
-* Run `pod install` to install `RicohAPIMstorage`.
+* Run `pod install` to install `RicohAPIMStorage`.
 * Open your project's workspace.
 * Choose your application scheme and run it to load the RicohAPIMStorage module.
 * Install completed! See [Sample Flow](https://github.com/ricohapi/media-storage-swift#sample-flow) for a coding example.

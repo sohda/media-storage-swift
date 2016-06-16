@@ -4,12 +4,12 @@
 ## Using the Sample
 * Clone Ricoh Media Storage for Swift by running the following commands:
 ```sh
-$ git clone --recursive https://github.com/ricohapi/MediaStorage.git
+$ git clone --recursive https://github.com/ricohapi/media-storage-swift.git
 ```
-* Open `MediaStorage.xcworkspace` in the `MediaStorage` directory.
+* Open `RicohAPIMstorage.xcworkspace` in the `media-storage-swift` directory.
 * Fill your Credentials in `ViewController.swift`.
     * `"### enter your client ID ###"` : replace with your client ID.
     * `"### enter your client secret ###"` : replace with your client secret.
     * `"### enter your user id ###"` : replace with your user id.
     * `"### enter your user password ###"` : replace with your user password.
-* Run `MediaStorageSample`.
+* Run `RicohAPIMStorageSample`.
