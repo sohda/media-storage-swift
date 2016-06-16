@@ -81,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				598CD09E1D126978006DEBCE /* RicohAPIMstorage.xcodeproj */,
-				595215551D0FE4A2006B63B1 /* RicohAPIMstorageSample */,
+				595215551D0FE4A2006B63B1 /* Source */,
 				595215541D0FE4A2006B63B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +94,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		595215551D0FE4A2006B63B1 /* RicohAPIMstorageSample */ = {
+		595215551D0FE4A2006B63B1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				595215561D0FE4A2006B63B1 /* AppDelegate.swift */,
@@ -104,7 +104,7 @@
 				5952155F1D0FE4A2006B63B1 /* LaunchScreen.storyboard */,
 				595215621D0FE4A2006B63B1 /* Info.plist */,
 			);
-			path = RicohAPIMstorageSample;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		598CD09F1D126978006DEBCE /* Products */ = {
@@ -337,7 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = RicohAPIMstorageSample/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.RicohAPIMstorageSample";
 				PRODUCT_NAME = RicohAPIMstorageSample;
@@ -349,7 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = RicohAPIMstorageSample/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.RicohAPIMstorageSample";
 				PRODUCT_NAME = RicohAPIMstorageSample;
