@@ -12,5 +12,4 @@ $ git clone --recursive https://github.com/ricohapi/MediaStorage.git
     * `"### enter your client secret ###"` : replace with your client secret.
     * `"### enter your user id ###"` : replace with your user id.
     * `"### enter your user password ###"` : replace with your user password.
-* Choose `MediaStorageSample` scheme at the scheme menu of Xcode.
 * Run `MediaStorageSample`.
