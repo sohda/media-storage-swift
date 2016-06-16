@@ -4,7 +4,7 @@
 //
 
 import UIKit
-import RicohAPIMstorage
+import RicohAPIMStorage
 import RicohAPIAuth
 
 class ViewController: UIViewController {

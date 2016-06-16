@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Sample/RicohAPIMstorageSample.xcodeproj">
+      location = "group:Sample/RicohAPIMStorageSample.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:RicohAPIMstorage.xcodeproj">
+      location = "group:RicohAPIMStorage.xcodeproj">
    </FileRef>
 </Workspace>
