@@ -6,7 +6,7 @@
 import XCTest
 @testable import RicohAPIMstorage
 
-class RicohAPIMstorageTests: XCTestCase {
+class MediaStorageTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
