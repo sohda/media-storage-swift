@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		590C71051D12C725002D3973 /* RicohAPIMStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593F2BB61D12C3B5004A39C6 /* RicohAPIMStorage.framework */; };
+		590C71061D12C725002D3973 /* RicohAPIMStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 593F2BB61D12C3B5004A39C6 /* RicohAPIMStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		595215571D0FE4A2006B63B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595215561D0FE4A2006B63B1 /* AppDelegate.swift */; };
 		595215591D0FE4A2006B63B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595215581D0FE4A2006B63B1 /* ViewController.swift */; };
 		5952155C1D0FE4A2006B63B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5952155A1D0FE4A2006B63B1 /* Main.storyboard */; };
@@ -15,6 +17,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		590C71071D12C725002D3973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593F2BB01D12C3B4004A39C6 /* RicohAPIMStorage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BEA95281CCDFFAD00819DFA;
+			remoteInfo = RicohAPIMStorage;
+		};
 		593F2BB51D12C3B5004A39C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 593F2BB01D12C3B4004A39C6 /* RicohAPIMStorage.xcodeproj */;
@@ -38,6 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				590C71061D12C725002D3973 /* RicohAPIMStorage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				590C71051D12C725002D3973 /* RicohAPIMStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +131,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				590C71081D12C725002D3973 /* PBXTargetDependency */,
 			);
 			name = RicohAPIMStorageSample;
 			productName = MediaStorageSample;
@@ -206,6 +218,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		590C71081D12C725002D3973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RicohAPIMStorage;
+			targetProxy = 590C71071D12C725002D3973 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5952155A1D0FE4A2006B63B1 /* Main.storyboard */ = {
