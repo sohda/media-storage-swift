@@ -6,7 +6,7 @@
 ```sh
 $ git clone --recursive https://github.com/ricohapi/media-storage-swift.git
 ```
-* Open `RicohAPIMstorage.xcworkspace` in the `media-storage-swift` directory.
+* Open `RicohAPIMStorage.xcworkspace` in the `media-storage-swift` directory.
 * Fill your Credentials in `ViewController.swift`.
     * `"### enter your client ID ###"` : replace with your client ID.
     * `"### enter your client secret ###"` : replace with your client secret.
