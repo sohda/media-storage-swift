@@ -4,9 +4,9 @@
 //
 
 import XCTest
-@testable import MediaStorage
+@testable import RicohAPIMstorage
 
-class MediaStorageTests: XCTestCase {
+class RicohAPIMstorageTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
