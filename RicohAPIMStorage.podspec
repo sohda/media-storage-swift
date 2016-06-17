@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = "Ricoh Company, Ltd."
 
-  s.source      = { :git => "https://github.com/ricohapi/media-storage-swift.git", :tag => "#{s.version}" }
+  s.source      = { :git => "https://github.com/ricohapi/media-storage-swift.git", :tag => "v#{s.version}" }
   s.source_files  = "Source/*.swift"
 
   s.ios.deployment_target = "9.0"
