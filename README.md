@@ -79,8 +79,8 @@ var authClient = AuthClient(
         userPass: "<your_password>"
     )
 
-    // Initialize a RicohAPIMStorage object with the AuthClient object
-    let mstorage = RicohAPIMStorage(authClient: authClient)
+    // Initialize a MediaStorage object with the AuthClient object
+    let mstorage = MediaStorage(authClient: authClient)
 
     // Connect to the server
     mstorage.connect(){result, error in
@@ -121,7 +121,7 @@ authClient.setResourceOwnerCreds(
 
 ### Constructor
 ```swift
-var mstorage = RicohAPIMStorage(authClient: authClient)
+var mstorage = MediaStorage(authClient: authClient)
 ```
 
 ### Connect to the server
