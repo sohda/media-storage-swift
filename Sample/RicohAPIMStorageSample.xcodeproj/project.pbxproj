@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		590C71051D12C725002D3973 /* RicohAPIMStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593F2BB61D12C3B5004A39C6 /* RicohAPIMStorage.framework */; };
+		590C71061D12C725002D3973 /* RicohAPIMStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 593F2BB61D12C3B5004A39C6 /* RicohAPIMStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		595215571D0FE4A2006B63B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595215561D0FE4A2006B63B1 /* AppDelegate.swift */; };
+		595215591D0FE4A2006B63B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595215581D0FE4A2006B63B1 /* ViewController.swift */; };
+		5952155C1D0FE4A2006B63B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5952155A1D0FE4A2006B63B1 /* Main.storyboard */; };
+		5952155E1D0FE4A2006B63B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5952155D1D0FE4A2006B63B1 /* Assets.xcassets */; };
+		595215611D0FE4A2006B63B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5952155F1D0FE4A2006B63B1 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		590C71071D12C725002D3973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593F2BB01D12C3B4004A39C6 /* RicohAPIMStorage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BEA95281CCDFFAD00819DFA;
+			remoteInfo = RicohAPIMStorage;
+		};
+		593F2BB51D12C3B5004A39C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593F2BB01D12C3B4004A39C6 /* RicohAPIMStorage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4BEA95291CCDFFAD00819DFA;
+			remoteInfo = RicohAPIMStorage;
+		};
+		593F2BB71D12C3B5004A39C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593F2BB01D12C3B4004A39C6 /* RicohAPIMStorage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4BEA95321CCDFFAD00819DFA;
+			remoteInfo = Tests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5949A50B1D0FF93300238312 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				590C71061D12C725002D3973 /* RicohAPIMStorage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		593F2BB01D12C3B4004A39C6 /* RicohAPIMStorage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RicohAPIMStorage.xcodeproj; path = ../RicohAPIMStorage.xcodeproj; sourceTree = "<group>"; };
+		595215531D0FE4A2006B63B1 /* RicohAPIMStorageSample.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RicohAPIMStorageSample.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		595215561D0FE4A2006B63B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		595215581D0FE4A2006B63B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5952155B1D0FE4A2006B63B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5952155D1D0FE4A2006B63B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		595215601D0FE4A2006B63B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		595215621D0FE4A2006B63B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		595215501D0FE4A2006B63B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590C71051D12C725002D3973 /* RicohAPIMStorage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		593F2BB11D12C3B4004A39C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				593F2BB61D12C3B5004A39C6 /* RicohAPIMStorage.framework */,
+				593F2BB81D12C3B5004A39C6 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5952154A1D0FE4A1006B63B1 = {
+			isa = PBXGroup;
+			children = (
+				593F2BB01D12C3B4004A39C6 /* RicohAPIMStorage.xcodeproj */,
+				595215551D0FE4A2006B63B1 /* Source */,
+				595215541D0FE4A2006B63B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		595215541D0FE4A2006B63B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				595215531D0FE4A2006B63B1 /* RicohAPIMStorageSample.temp_caseinsensitive_rename.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		595215551D0FE4A2006B63B1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				595215561D0FE4A2006B63B1 /* AppDelegate.swift */,
+				595215581D0FE4A2006B63B1 /* ViewController.swift */,
+				5952155A1D0FE4A2006B63B1 /* Main.storyboard */,
+				5952155D1D0FE4A2006B63B1 /* Assets.xcassets */,
+				5952155F1D0FE4A2006B63B1 /* LaunchScreen.storyboard */,
+				595215621D0FE4A2006B63B1 /* Info.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		595215521D0FE4A2006B63B1 /* RicohAPIMStorageSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5952157B1D0FE4A2006B63B1 /* Build configuration list for PBXNativeTarget "RicohAPIMStorageSample" */;
+			buildPhases = (
+				5952154F1D0FE4A2006B63B1 /* Sources */,
+				595215501D0FE4A2006B63B1 /* Frameworks */,
+				595215511D0FE4A2006B63B1 /* Resources */,
+				5949A50B1D0FF93300238312 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				590C71081D12C725002D3973 /* PBXTargetDependency */,
+			);
+			name = RicohAPIMStorageSample;
+			productName = MediaStorageSample;
+			productReference = 595215531D0FE4A2006B63B1 /* RicohAPIMStorageSample.temp_caseinsensitive_rename.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5952154B1D0FE4A1006B63B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ricoh IT Solutions Co.,Ltd.";
+				TargetAttributes = {
+					595215521D0FE4A2006B63B1 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5952154E1D0FE4A2006B63B1 /* Build configuration list for PBXProject "RicohAPIMStorageSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5952154A1D0FE4A1006B63B1;
+			productRefGroup = 595215541D0FE4A2006B63B1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 593F2BB11D12C3B4004A39C6 /* Products */;
+					ProjectRef = 593F2BB01D12C3B4004A39C6 /* RicohAPIMStorage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				595215521D0FE4A2006B63B1 /* RicohAPIMStorageSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		593F2BB61D12C3B5004A39C6 /* RicohAPIMStorage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RicohAPIMStorage.framework;
+			remoteRef = 593F2BB51D12C3B5004A39C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		593F2BB81D12C3B5004A39C6 /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = 593F2BB71D12C3B5004A39C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		595215511D0FE4A2006B63B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595215611D0FE4A2006B63B1 /* LaunchScreen.storyboard in Resources */,
+				5952155E1D0FE4A2006B63B1 /* Assets.xcassets in Resources */,
+				5952155C1D0FE4A2006B63B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5952154F1D0FE4A2006B63B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595215591D0FE4A2006B63B1 /* ViewController.swift in Sources */,
+				595215571D0FE4A2006B63B1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		590C71081D12C725002D3973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RicohAPIMStorage;
+			targetProxy = 590C71071D12C725002D3973 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5952155A1D0FE4A2006B63B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5952155B1D0FE4A2006B63B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5952155F1D0FE4A2006B63B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				595215601D0FE4A2006B63B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		595215791D0FE4A2006B63B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5952157A1D0FE4A2006B63B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5952157C1D0FE4A2006B63B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Source/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.RicohAPIMStorageSample";
+				PRODUCT_NAME = RicohAPIMStorageSample.temp_caseinsensitive_rename;
+			};
+			name = Debug;
+		};
+		5952157D1D0FE4A2006B63B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Source/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ricohapi.media-storage-swift.RicohAPIMStorageSample";
+				PRODUCT_NAME = RicohAPIMStorageSample.temp_caseinsensitive_rename;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5952154E1D0FE4A2006B63B1 /* Build configuration list for PBXProject "RicohAPIMStorageSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595215791D0FE4A2006B63B1 /* Debug */,
+				5952157A1D0FE4A2006B63B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5952157B1D0FE4A2006B63B1 /* Build configuration list for PBXNativeTarget "RicohAPIMStorageSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5952157C1D0FE4A2006B63B1 /* Debug */,
+				5952157D1D0FE4A2006B63B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5952154B1D0FE4A1006B63B1 /* Project object */;
+}

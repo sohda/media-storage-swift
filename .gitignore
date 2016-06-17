@@ -1,8 +1,16 @@
 build/
-MediaStorage.xcodeproj/*.pbxuser
-MediaStorage.xcodeproj/*.mode*
-MediaStorage.xcodeproj/xcuserdata/
-MediaStorage.xcodeproj/project.xcworkspace/
+RicohAPIMStorage.xcodeproj/*.pbxuser
+RicohAPIMStorage.xcodeproj/*.mode*
+RicohAPIMStorage.xcodeproj/xcuserdata/
+RicohAPIMStorage.xcodeproj/project.xcworkspace/
+
+Sample/RicohAPIMStorageSample.xcodeproj/*.pbxuser
+Sample/RicohAPIMStorageSample.xcodeproj/*.mode*
+Sample/RicohAPIMStorageSample.xcodeproj/xcuserdata/
+Sample/RicohAPIMStorageSample.xcodeproj/project.xcworkspace/
+
+RicohAPIMStorage.xcworkspace/xcuserdata
+RicohAPIMStorage.xcworkspace/xcshareddata/*.xcscmblueprint
 
 .DS_Store
 *.swp

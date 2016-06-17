@@ -4,7 +4,7 @@
 //
 
 import UIKit
-import MediaStorage
+import RicohAPIMStorage
 import RicohAPIAuth
 
 class ViewController: UIViewController {
@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         clientSecret: "### enter your client secret ###"
     )
     var mstorage: MediaStorage?
-
+    
     @IBAction func tapHandler(sender: AnyObject) {
         authClient.setResourceOwnerCreds(
             userId: "### enter your user id ###",
@@ -35,9 +35,9 @@ class ViewController: UIViewController {
             }
         })
     }
-
+    
     @IBOutlet weak var resultTextField: UITextField!
-
+    
     @IBAction func getMediaIdButtonHandler(sender: AnyObject) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
             self.mstorage!.list(){result, error in
@@ -59,20 +59,19 @@ class ViewController: UIViewController {
             }
         })
     }
-
+    
     @IBOutlet weak var mediaIdListTextView: UITextView!
-
+    
     @IBOutlet weak var getMediaIdListResultTextField: UITextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }
-
