@@ -20,7 +20,7 @@ If you don't have them, please register yourself and your client from [THETA Dev
 * [Ricoh Auth Client for Swift](https://github.com/ricohapi/auth-swift) 1.0+
 
 ## Installation
-This section shows you two different methods to install Ricoh Media Storage for Swift in your application.
+This section shows you two different methods to install Ricoh Media Storage for Swift in your application.  
 See [Media Storage Sample](https://github.com/ricohapi/media-storage-swift/tree/master/Sample#media-storage-sample) to try out a sample of Ricoh Media Storage for Swift.
 
 ### CocoaPods
@@ -192,7 +192,7 @@ Search media ids by user metadata
 
 ```swift
 mstorage.list(["limit": "25", "after": "<media_id>",
-    "filter": ["meta.user.<key1>": "<value1>", "meta.user.<key2>": "<value2>"]){result, error in
+    "filter": ["meta.user.<key1>": "<value1>", "meta.user.<key2>": "<value2>"]]){result, error in
     // do something
 }
 ```
