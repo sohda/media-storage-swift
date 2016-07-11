@@ -161,6 +161,8 @@ mstorage.download("<media_id>"){result, error in
 ### List media ids
 * Without options
 
+You'll get a default list if you set nothing or an empty `Dictionary` object on the first parameter.
+
 ```swift
 mstorage.list(){result, error in
     if error.isEmpty() {
@@ -188,7 +190,7 @@ mstorage.list(["limit": "25", "after": "<media_id>"]){result, error in
 
 * Search
 
-Search media ids by user metadata
+You can add another `Dictionary` object with `filter` key into the listing options to search by user metadata.
 
 ```swift
 mstorage.list(["limit": "25", "after": "<media_id>",
@@ -248,6 +250,7 @@ mstorage.meta("<media_id>"){result, error in
 ```swift
 mstorage.meta("<media_id>", "exif"){result, error in
     if error.isEmpty() {
+        var exif: [String: String] = result
         // do something
     }
 }
@@ -257,6 +260,7 @@ mstorage.meta("<media_id>", "exif"){result, error in
 ```swift
 mstorage.meta("<media_id>", "gpano"){result, error in
     if error.isEmpty() {
+        var gpano: [String: String] = result
         // do something
     }
 }
@@ -266,6 +270,7 @@ mstorage.meta("<media_id>", "gpano"){result, error in
 ```swift
 mstorage.meta("<media_id>", "user"){result, error in
     if error.isEmpty() {
+        var userMeta: [String: String] = result
         // do something
     }
 }
@@ -275,6 +280,7 @@ mstorage.meta("<media_id>", "user"){result, error in
 ```swift
 mstorage.meta("<media_id>", "user.<key>"){result, error in
     if error.isEmpty() {
+        var value: String = result["<key>"]
         // do something
     }
 }
