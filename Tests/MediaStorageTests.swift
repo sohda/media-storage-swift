@@ -4,7 +4,7 @@
 //
 
 import XCTest
-@testable import MediaStorage
+@testable import RicohAPIMStorage
 
 class MediaStorageTests: XCTestCase {
     
