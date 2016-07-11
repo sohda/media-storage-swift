@@ -45,6 +45,7 @@ public struct MediaMeta {
 
     public var exif = [String: String]()
     public var gpano = [String: String]()
+    public var userMeta = [String: String]()
 
 }
 
@@ -348,9 +349,10 @@ public class MediaStorage {
 
                 let exif = dataDic["exif"] as! [String:String]
                 let gpano = dataDic["gpano"] as! [String:String]
+                let userMeta = dataDic["user"] as! [String:String]
 
                 completionHandler(
-                    MediaMeta(exif: exif, gpano: gpano),
+                    MediaMeta(exif: exif, gpano: gpano, userMeta: userMeta),
                     MediaStorageError(statusCode: nil, message: nil)
                 )
 
