@@ -67,6 +67,14 @@ public class MediaStorage {
     let mstorageEndpoint = "https://mss.ricohapi.com/v1/media"
     let getContentPath = "/content"
     let getMetaPath = "/meta"
+    let getUserMetaPath = "/meta/user"
+
+    let metaExif = "exif"
+    let metaGpano = "gpano"
+    let metaUser = "user"
+
+    let replaceUserMetaRegex = "^user\\.([A-Za-z0-9_\\-]{1,256})$"
+    let firstGroupRegex = "$1"
     
     public init(authClient: AuthClient) {
         self.authClient = authClient
@@ -364,6 +372,86 @@ public class MediaStorage {
             }
 
         }
+    }
+
+    public func meta(mediaId mediaId: String!, fieldName: String!, completionHandler: (Dictionary<String, String>, MediaStorageError) -> Void) {
+        if accessToken == nil {
+            completionHandler(Dictionary<String, String>(), MediaStorageError(statusCode: nil, message: "wrong usage: use the connect method to get an access token."))
+            return
+        }
+        var isUserKey = false
+        var url : String
+        var userMetaKey = ""
+        if fieldName == nil {
+            completionHandler(Dictionary<String, String>(), MediaStorageError(statusCode: nil, message: "invalid parameter: nil"))
+            return
+        } else if fieldName == metaExif || fieldName == metaGpano || fieldName == metaUser {
+            // GET /media/{id}/meta/exif, /media/{id}/meta/gpano, /media/{id}/meta/user
+            url = "\(mstorageEndpoint)/\(mediaId)\(getMetaPath)/\(fieldName)"
+        } else {
+            userMetaKey = replaceUserMeta(fieldName)
+            if userMetaKey == "" {
+                completionHandler(Dictionary<String, String>(), MediaStorageError(statusCode: nil, message: "invalid parameter: \(fieldName)"))
+                return
+            } else {
+                // GET /media/{id}/meta/user/{key}
+                url = "\(mstorageEndpoint)/\(mediaId)\(getUserMetaPath)/\(userMetaKey)"
+                isUserKey = true
+            }
+        }
+
+        MediaStorageRequest.get(
+            url: url,
+            queryParams: [String: String](),
+            header: [
+                "Authorization" : "Bearer \(accessToken!)"
+            ]
+        ){(data, resp, err) in
+            if err != nil {
+                completionHandler(Dictionary<String, String>(), MediaStorageError(statusCode: nil, message: "request failed: \(err!.code): \(err!.domain)"))
+                return
+            }
+
+            let httpresp = resp as! NSHTTPURLResponse
+            let statusCode = httpresp.statusCode
+            let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding) as! String
+            if !httpresp.isSucceeded() {
+                completionHandler(
+                    Dictionary<String, String>(),
+                    MediaStorageError(statusCode: statusCode, message: "received error: \(dataString)")
+                )
+                return
+            }
+
+            var dataDic = Dictionary<String, String>()
+            if isUserKey {
+                dataDic[userMetaKey] = dataString
+
+            } else  {
+                do {
+                    dataDic = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as! [String : String]
+                } catch {
+                    completionHandler(
+                        Dictionary<String, String>(),
+                        MediaStorageError(statusCode: statusCode, message: "invalid response: \(dataString)")
+                    )
+                }
+
+            }
+
+            completionHandler(
+                dataDic,
+                MediaStorageError(statusCode: nil, message: nil)
+            )
+
+        }
+    }
+
+    private func replaceUserMeta (userMeta: String!) -> String{
+        let replacedString = userMeta.stringByReplacingOccurrencesOfString(replaceUserMetaRegex, withString: firstGroupRegex, options: NSStringCompareOptions.RegularExpressionSearch, range: nil)
+
+        return replacedString == userMeta ? "" : replacedString
+
     }
 
 }
