@@ -73,6 +73,7 @@ public class MediaStorage {
     let metaUser = "user"
 
     let replaceUserMetaRegex = "^user\\.([A-Za-z0-9_\\-]{1,256})$"
+    let firstGroupRegex = "$1"
     
     public init(authClient: AuthClient) {
         self.authClient = authClient
@@ -445,19 +446,9 @@ public class MediaStorage {
     }
 
     private func replaceUserMeta (userMeta: String!) -> String{
-        var regex: NSRegularExpression
-        do {
-            let pattern = replaceUserMetaRegex
-            regex = try NSRegularExpression(pattern: pattern, options: NSRegularExpressionOptions.AllowCommentsAndWhitespace)
-            let matches = regex.matchesInString(userMeta, options: NSMatchingOptions.ReportProgress, range:NSMakeRange(0, userMeta.characters.count))
-            if matches.count > 0 {
-                return userMeta.substringFromIndex(userMeta.startIndex.advancedBy(5))
-            } else {
-                return ""
-            }
-        } catch {
-            return ""
-        }
+        let replacedString = userMeta.stringByReplacingOccurrencesOfString(replaceUserMetaRegex, withString: firstGroupRegex, options: NSStringCompareOptions.RegularExpressionSearch, range: nil)
+
+        return replacedString == userMeta ? "" : replacedString
 
     }
 
