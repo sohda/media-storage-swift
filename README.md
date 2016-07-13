@@ -159,6 +159,10 @@ mstorage.download("<media_id>"){result, error in
 ```
 
 ### List media ids
+* Without options
+
+You'll get a default list if you set nothing or an empty `Dictionary` object on the first parameter.
+
 ```swift
 mstorage.list(){result, error in
     if error.isEmpty() {
@@ -171,16 +175,33 @@ mstorage.list(){result, error in
         // do something
     }
 }
-// You can also use a Dictionary object for listing options as follows.
-// The available options are "limit", "after" and "before".
+```
+
+* With options
+
+You can also use a `Dictionary` object for listing options as follows.
+The available options are `limit`, `after` and `before`.
+
+```swift
 mstorage.list(["limit": "25", "after": "<media_id>"]){result, error in
     // do something
 }
 ```
 
-### Delete
+* Search
+
+You can add another `Dictionary` object with `filter` key into the listing options to search by user metadata.
+
 ```swift
-mstorage.delete("<media_id>"){ error in
+mstorage.list(["limit": "25", "after": "<media_id>",
+    "filter": ["meta.user.<key1>": "<value1>", "meta.user.<key2>": "<value2>"]]){result, error in
+    // do something
+}
+```
+
+### Delete media
+```swift
+mstorage.delete("<media_id>"){error in
     if error.isEmpty() {
         // do something
     }
@@ -200,12 +221,85 @@ mstorage.info("<media_id>"){result, error in
 }
 ```
 
+### Attach media metadata
+You can define your original metadata as a 'user metadata'.
+Existing metadata value for the same key will be overwritten. Up to 10 user metadata can be attached to a media data. 
+
+```swift
+mstorage.addMeta("<media_id>", ["user.<key1>": "<value1>", "user.<key2>": "<value2>"]){error in
+    if error.isEmpty() {
+        // do something
+    }
+}
+```
+
 ### Get media metadata
+* All
 ```swift
 mstorage.meta("<media_id>"){result, error in
     if error.isEmpty() {
         var exif: [String: String] = result.exif
         var gpano: [String: String] = result.gpano
+        var userMeta: [String: String] = result.userMeta
+        // do something
+    }
+}
+```
+
+* Exif
+```swift
+mstorage.meta("<media_id>", "exif"){result, error in
+    if error.isEmpty() {
+        var exif: [String: String] = result
+        // do something
+    }
+}
+```
+
+* Google Photo Sphere XMP
+```swift
+mstorage.meta("<media_id>", "gpano"){result, error in
+    if error.isEmpty() {
+        var gpano: [String: String] = result
+        // do something
+    }
+}
+```
+
+* User metadata (all)
+```swift
+mstorage.meta("<media_id>", "user"){result, error in
+    if error.isEmpty() {
+        var userMeta: [String: String] = result
+        // do something
+    }
+}
+```
+
+* User metadata (with a key)
+```swift
+mstorage.meta("<media_id>", "user.<key>"){result, error in
+    if error.isEmpty() {
+        var value: String = result["<key>"]
+        // do something
+    }
+}
+```
+
+### Delete media metadata
+* User metadata (all)
+```swift
+mstorage.removeMeta("<media_id>", "user"){error in
+    if error.isEmpty() {
+        // do something
+    }
+}
+```
+
+* User metadata (with a key)
+```swift
+mstorage.removeMeta("<media_id>", "user.<key>"){error in
+    if error.isEmpty() {
         // do something
     }
 }
