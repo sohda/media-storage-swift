@@ -258,7 +258,7 @@ public class MediaStorage {
             let userMetaKey = replaceUserMeta(key)
             if userMetaKey.isEmpty || !isValidValue(value) {
                 completionHandler(
-                    MediaStorageError(statusCode: nil, message: "invalid parameter: [\(userMetaKey): \(value)]")
+                    MediaStorageError(statusCode: nil, message: "invalid parameter: [\(key): \(value)]")
                 )
             }
             
