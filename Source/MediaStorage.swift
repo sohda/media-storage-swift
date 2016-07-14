@@ -243,7 +243,7 @@ public class MediaStorage {
     public func addMeta(mediaId mediaId: String, userMeta: Dictionary<String, String>, completionHandler: MediaStorageError -> Void) {
         if accessToken == nil {
             completionHandler(
-                MediaStorageError(statusCode: nil, message: "wrong usage: use the connect method to get an access token.")
+                MediaStorageError(statusCode: nil, message: "userMeta is empty: nothing to request.")
             )
             return
         }
