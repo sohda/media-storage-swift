@@ -463,7 +463,7 @@ public class MediaStorage {
             url = "\(mstorageEndpoint)/\(mediaId)\(getUserMetaPath)"
         } else {
             userMetaKey = replaceUserMeta(fieldName)
-            if userMetaKey == "" {
+            if userMetaKey.isEmpty {
                 completionHandler(MediaStorageError(statusCode: nil, message: "invalid parameter: \(fieldName)"))
                 return
             } else {
