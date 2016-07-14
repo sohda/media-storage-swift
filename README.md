@@ -183,7 +183,7 @@ You can also use a `Dictionary` object for listing options as follows.
 The available options are `limit`, `after` and `before`.
 
 ```swift
-mstorage.list(["limit": "25", "after": "<media_id>"]){result, error in
+mstorage.list(["limit": 25, "after": "<media_id>"]){result, error in
     // do something
 }
 ```
@@ -193,7 +193,7 @@ mstorage.list(["limit": "25", "after": "<media_id>"]){result, error in
 You can add another `Dictionary` object with `filter` key into the listing options to search by user metadata.
 
 ```swift
-mstorage.list(["limit": "25", "after": "<media_id>",
+mstorage.list(["limit": 25, "after": "<media_id>",
     "filter": ["meta.user.<key1>": "<value1>", "meta.user.<key2>": "<value2>"]]){result, error in
     // do something
 }
