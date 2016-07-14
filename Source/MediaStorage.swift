@@ -447,6 +447,57 @@ public class MediaStorage {
         }
     }
 
+    public func removeMeta(mediaId mediaId: String!, fieldName: String!, completionHandler: MediaStorageError -> Void) {
+        if accessToken == nil {
+            completionHandler(MediaStorageError(statusCode: nil, message: "wrong usage: use the connect method to get an access token."))
+            return
+        }
+
+        var url : String
+        var userMetaKey = ""
+        if fieldName == nil {
+            completionHandler(MediaStorageError(statusCode: nil, message: "invalid parameter: \(fieldName)"))
+            return
+        } else if fieldName == metaUser {
+            // DELETE /media/{id}/meta/user
+            url = "\(mstorageEndpoint)/\(mediaId)\(getUserMetaPath)"
+        } else {
+            userMetaKey = replaceUserMeta(fieldName)
+            if userMetaKey == "" {
+                completionHandler(MediaStorageError(statusCode: nil, message: "invalid parameter: \(fieldName)"))
+                return
+            } else {
+                // DELETE /media/{id}/meta/user/{key}
+                url = "\(mstorageEndpoint)/\(mediaId)\(getUserMetaPath)/\(userMetaKey)"
+            }
+        }
+        MediaStorageRequest.delete(
+            url: url,
+            header: [
+                "Authorization" : "Bearer \(accessToken!)"
+            ]
+        ){(data, resp, err) in
+            if err != nil {
+                completionHandler(MediaStorageError(statusCode: nil, message: "request failed: \(err!.code): \(err!.domain)"))
+                return
+            }
+
+            let httpresp = resp as! NSHTTPURLResponse
+            let statusCode = httpresp.statusCode
+            let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding) as! String
+            if !httpresp.isSucceeded() {
+                completionHandler(
+                    MediaStorageError(statusCode: statusCode, message: "received error: \(dataString)")
+                )
+                return
+            }
+
+            completionHandler(
+                MediaStorageError(statusCode: nil, message: nil)
+            )
+        }
+    }
+
     private func replaceUserMeta (userMeta: String!) -> String{
         let replacedString = userMeta.stringByReplacingOccurrencesOfString(replaceUserMetaRegex, withString: firstGroupRegex, options: NSStringCompareOptions.RegularExpressionSearch, range: nil)
 
