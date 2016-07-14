@@ -223,7 +223,7 @@ mstorage.info(mediaId: "<media_id>"){result, error in
 
 ### Attach media metadata
 You can define your original metadata as a 'user metadata'.
-Existing metadata value for the same key will be overwritten. Up to 10 user metadata can be attached to a media data. 
+Existing metadata value for the same key will be overwritten. Up to 10 user metadata can be attached to a media data.
 
 ```swift
 mstorage.addMeta(mediaId: "<media_id>", userMeta: ["user.<key1>": "<value1>", "user.<key2>": "<value2>"]){error in
@@ -280,7 +280,7 @@ mstorage.meta(mediaId: "<media_id>", fieldName: "user"){result, error in
 ```swift
 mstorage.meta(mediaId: "<media_id>", fieldName: "user.<key>"){result, error in
     if error.isEmpty() {
-        var value: String = result["<key>"]
+        var value: String = result["<key>"]!
         // do something
     }
 }
