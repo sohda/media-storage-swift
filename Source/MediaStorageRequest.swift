@@ -19,16 +19,6 @@ class MediaStorageRequest {
         )
     }
     
-    static func post(url url: String, header: Dictionary<String, String>, params: Dictionary<String, String>, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) {
-        sendRequest(
-            url: url,
-            method: "POST",
-            header: header,
-            body: joinParameters(params: params).dataUsingEncoding(NSUTF8StringEncoding),
-            completionHandler: completionHandler
-        )
-    }
-    
     static func post(url url: String, header: Dictionary<String, String>, body: NSData? = nil, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) {
         sendRequest(
             url: url,
