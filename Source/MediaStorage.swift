@@ -249,15 +249,15 @@ public class MediaStorage {
         }
         
         for (key, value) in userMeta {
-            let requestUserMetaKey = replaceUserMeta(key)
-            if requestUserMetaKey.isEmpty || !isValidValue(value) {
+            let userMetaKey = replaceUserMeta(key)
+            if userMetaKey.isEmpty || !isValidValue(value) {
                 completionHandler(
                     MediaStorageError(statusCode: nil, message: "invalid parameter: \(userMeta)")
                 )
             }
             
             MediaStorageRequest.put(
-                url: "\(mstorageEndpoint)/\(mediaId)\(getUserMetaPath)/\(requestUserMetaKey)",
+                url: "\(mstorageEndpoint)/\(mediaId)\(getUserMetaPath)/\(userMetaKey)",
                 header: [
                     "content-type" : "text/plain",
                     "Authorization" : "Bearer \(accessToken!)"
