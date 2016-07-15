@@ -77,6 +77,9 @@ public class MediaStorage {
     let replaceUserMetaRegex = "^user\\.([A-Za-z0-9_\\-]{1,256})$"
     let firstGroupRegex = "$1"
     
+    let maxUserMetaLength = 1024
+    let minUserMetaLength = 1
+    
     public init(authClient: AuthClient) {
         self.authClient = authClient
     }
@@ -270,7 +273,58 @@ public class MediaStorage {
             completionHandler(MediaContent(data: imageData), MediaStorageError(statusCode: nil, message: nil))
         }
     }
-
+    
+    public func addMeta(mediaId mediaId: String, userMeta: Dictionary<String, String>, completionHandler: MediaStorageError -> Void) {
+        if accessToken == nil {
+            completionHandler(
+                MediaStorageError(statusCode: nil, message: "wrong usage: use the connect method to get an access token.")
+            )
+            return
+        }
+        
+        if userMeta.isEmpty {
+            completionHandler(
+                MediaStorageError(statusCode: nil, message: "userMeta is empty: nothing to request.")
+            )
+        }
+        
+        for (key, value) in userMeta {
+            let userMetaKey = replaceUserMeta(key)
+            if userMetaKey.isEmpty || !isValidValue(value) {
+                completionHandler(
+                    MediaStorageError(statusCode: nil, message: "invalid parameter: [\(key): \(value)]")
+                )
+            }
+            
+            MediaStorageRequest.put(
+                url: "\(mstorageEndpoint)/\(mediaId)\(getUserMetaPath)/\(userMetaKey)",
+                header: [
+                    "content-type" : "text/plain",
+                    "Authorization" : "Bearer \(accessToken!)"
+                ],
+                data: value
+            ){(data, resp, err) in
+                if err != nil {
+                    completionHandler(
+                        MediaStorageError(statusCode: nil, message: "request failed: \(err!.code): \(err!.description as String)")
+                    )
+                    return
+                }
+                
+                let httpresp = resp as! NSHTTPURLResponse
+                if !httpresp.isSucceeded() {
+                    completionHandler(
+                        MediaStorageError(statusCode: httpresp.statusCode, message: "add user meta failure: \((httpresp.URL?.absoluteString)! as String)")
+                    )
+                    return
+                }
+                
+                completionHandler(
+                    MediaStorageError(statusCode: nil, message: nil)
+                )
+            }
+        }
+    }
     
     public func info(mediaId mediaId: String!, completionHandler: (MediaInfo, MediaStorageError) -> Void) {
         if accessToken == nil {
@@ -538,5 +592,9 @@ public class MediaStorage {
         return replacedString == userMeta ? "" : replacedString
 
     }
-
+    
+    private func isValidValue(value: String) -> Bool{
+        return (value.characters.count >= minUserMetaLength && value.characters.count <= maxUserMetaLength)
+    }
+    
 }

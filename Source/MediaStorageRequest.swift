@@ -29,6 +29,16 @@ class MediaStorageRequest {
         )
     }
     
+    static func put(url url: String, header: Dictionary<String, String>, data: String, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void){
+        sendRequest(
+            url: url,
+            method: "PUT",
+            header: header,
+            body: data.dataUsingEncoding(NSUTF8StringEncoding),
+            completionHandler: completionHandler
+        )
+    }
+    
     static func upload(url url: String, header: Dictionary<String, String>, data: NSData, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) {
         sendRequestToUpload(
             url: url,
