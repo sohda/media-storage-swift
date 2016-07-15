@@ -65,6 +65,7 @@ public class MediaStorage {
     var accessToken: String?
     
     let mstorageEndpoint = "https://mss.ricohapi.com/v1/media"
+    let searchPath = "/search"
     let getContentPath = "/content"
     let getMetaPath = "/meta"
     let getUserMetaPath = "/meta/user"
@@ -90,19 +91,13 @@ public class MediaStorage {
         }
     }
     
-    public func list(params: Dictionary<String, String> = [:], completionHandler: (MediaList, MediaStorageError) -> Void) {
+    public func list(params: Dictionary<String, AnyObject> = [:], completionHandler: (MediaList, MediaStorageError) -> Void) {
         if accessToken == nil {
             completionHandler(MediaList(), MediaStorageError(statusCode: nil, message: "wrong usage: use the connect method to get an access token."))
             return
         }
         
-        MediaStorageRequest.get(
-            url: mstorageEndpoint,
-            queryParams: params,
-            header: [
-                "Authorization" : "Bearer \(accessToken!)"
-            ]
-        ){(data, resp, err) in
+        let afterRequest = {(data: NSData?, resp: NSURLResponse?, err: NSError?) -> Void in
             if err != nil {
                 completionHandler(
                     MediaList(),
@@ -147,11 +142,50 @@ public class MediaStorage {
                     MediaStorageError(statusCode: statusCode, message: "invalid response: \(dataString)")
                 )
             }
-            
         }
         
+        if let query = params["filter"] {
+            // POST /media/search
+            var paging = params
+            paging["filter"] = nil
+            
+            let searchParams: [String: AnyObject] = [
+                "search_version": "2016-07-08",
+                "query": query,
+                "paging": paging
+            ]
+            
+            let body: NSData
+            do {
+                body = try NSJSONSerialization.dataWithJSONObject(searchParams, options: NSJSONWritingOptions.init(rawValue: 0))
+            } catch {
+                completionHandler(
+                    MediaList(),
+                    MediaStorageError(statusCode: nil, message: "invalid parameter: \(params)")
+                )
+                return
+            }
+            MediaStorageRequest.post(
+                url: "\(mstorageEndpoint)\(searchPath)",
+                header: [
+                    "content-type" : "application/json",
+                    "Authorization" : "Bearer \(accessToken!)"
+                ],
+                body: body,
+                completionHandler: afterRequest
+            )
+        } else {
+            // GET /media
+            MediaStorageRequest.get(
+                url: mstorageEndpoint,
+                queryParams: params,
+                header: [
+                    "Authorization" : "Bearer \(accessToken!)"
+                ],
+                completionHandler: afterRequest
+            )
+        }
     }
-    
     
     public func upload(data data: NSData!, completionHandler: (MediaInfo, MediaStorageError) -> Void) {
         if accessToken == nil {
