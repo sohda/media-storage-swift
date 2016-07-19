@@ -40,6 +40,10 @@ class ViewController: UIViewController {
     
     @IBAction func getMediaIdButtonHandler(sender: AnyObject) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+            if self.mstorage == nil {
+                print("ERROR: push connect button.")
+                return
+            }
             self.mstorage!.list(){result, error in
                 if error.isEmpty() {
                     var idArray = [String]()
