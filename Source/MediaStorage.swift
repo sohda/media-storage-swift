@@ -236,7 +236,6 @@ public class MediaStorage {
                     MediaStorageError(statusCode: statusCode, message: "invalid response: \(dataString)")
                 )
             }
-            
         }
     }
     
@@ -286,6 +285,7 @@ public class MediaStorage {
             completionHandler(
                 MediaStorageError(statusCode: nil, message: "userMeta is empty: nothing to request.")
             )
+            return
         }
         
         for (key, value) in userMeta {
@@ -294,6 +294,7 @@ public class MediaStorage {
                 completionHandler(
                     MediaStorageError(statusCode: nil, message: "invalid parameter: [\(key): \(value)]")
                 )
+                return
             }
             
             MediaStorageRequest.put(
@@ -374,7 +375,6 @@ public class MediaStorage {
                     MediaStorageError(statusCode: statusCode, message: "invalid response: \(dataString)")
                 )
             }
-            
         }
     }
     
@@ -458,7 +458,6 @@ public class MediaStorage {
                     MediaStorageError(statusCode: statusCode, message: "invalid response: \(dataString)")
                 )
             }
-
         }
     }
 
@@ -523,15 +522,14 @@ public class MediaStorage {
                         Dictionary<String, String>(),
                         MediaStorageError(statusCode: statusCode, message: "invalid response: \(dataString)")
                     )
+                    return
                 }
-
             }
 
             completionHandler(
                 dataDic,
                 MediaStorageError(statusCode: nil, message: nil)
             )
-
         }
     }
 
@@ -588,13 +586,10 @@ public class MediaStorage {
 
     private func replaceUserMeta (userMeta: String!) -> String{
         let replacedString = userMeta.stringByReplacingOccurrencesOfString(replaceUserMetaRegex, withString: firstGroupRegex, options: NSStringCompareOptions.RegularExpressionSearch, range: nil)
-
         return replacedString == userMeta ? "" : replacedString
-
     }
     
     private func isValidValue(value: String) -> Bool{
         return (value.characters.count >= minUserMetaLength && value.characters.count <= maxUserMetaLength)
     }
-    
 }
