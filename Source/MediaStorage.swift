@@ -237,7 +237,6 @@ public class MediaStorage {
                         MediaStorageError(statusCode: statusCode, message: "invalid response: \(dataString)")
                     )
                 }
-                
             }
         }
     }
@@ -384,7 +383,6 @@ public class MediaStorage {
                         MediaStorageError(statusCode: statusCode, message: "invalid response: \(dataString)")
                     )
                 }
-                
             }
         }
     }
@@ -472,7 +470,6 @@ public class MediaStorage {
                         MediaStorageError(statusCode: statusCode, message: "invalid response: \(dataString)")
                     )
                 }
-                
             }
         }
     }
