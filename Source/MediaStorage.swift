@@ -7,57 +7,43 @@ import Foundation
 import RicohAPIAuth
 
 public struct MediaInfo {
-    
     public var id = ""
     public var contentType = ""
     public var bytes = 0
     public var createdAt = ""
-    
 }
 
 public struct MediaIndex {
-    
     public var id = ""
-    
 }
 
 public struct Paging {
-    
     public var next: String?
     public var previous: String?
-    
 }
 
 public struct MediaList {
-    
     public var mediaList = [MediaIndex]()
     public var paging = Paging()
-    
 }
 
 public struct MediaContent {
-    
     public var data = NSData()
-    
 }
 
 public struct MediaMeta {
-
     public var exif = [String: String]()
     public var gpano = [String: String]()
     public var userMeta = [String: String]()
-
 }
 
 public struct MediaStorageError {
-    
     public let statusCode: Int?
     public let message: String?
     
     public func isEmpty() -> Bool {
         return (statusCode == nil) && (message == nil)
     }
-    
 }
 
 public class MediaStorage {
@@ -237,7 +223,6 @@ public class MediaStorage {
                         MediaStorageError(statusCode: statusCode, message: "invalid response: \(dataString)")
                     )
                 }
-                
             }
         }
     }
@@ -292,6 +277,7 @@ public class MediaStorage {
                 completionHandler(
                     MediaStorageError(statusCode: nil, message: "userMeta is empty: nothing to request.")
                 )
+                return
             }
             
             for (key, value) in userMeta {
@@ -300,6 +286,7 @@ public class MediaStorage {
                     completionHandler(
                         MediaStorageError(statusCode: nil, message: "invalid parameter: [\(key): \(value)]")
                     )
+                    return
                 }
                 
                 MediaStorageRequest.put(
@@ -382,7 +369,6 @@ public class MediaStorage {
                         MediaStorageError(statusCode: statusCode, message: "invalid response: \(dataString)")
                     )
                 }
-                
             }
         }
     }
@@ -470,7 +456,6 @@ public class MediaStorage {
                         MediaStorageError(statusCode: statusCode, message: "invalid response: \(dataString)")
                     )
                 }
-                
             }
         }
     }
@@ -537,15 +522,14 @@ public class MediaStorage {
                             Dictionary<String, String>(),
                             MediaStorageError(statusCode: statusCode, message: "invalid response: \(dataString)")
                         )
+                        return
                     }
-                    
                 }
                 
                 completionHandler(
                     dataDic,
                     MediaStorageError(statusCode: nil, message: nil)
                 )
-                
             }
         }
     }
@@ -605,13 +589,10 @@ public class MediaStorage {
 
     private func replaceUserMeta (userMeta: String!) -> String{
         let replacedString = userMeta.stringByReplacingOccurrencesOfString(replaceUserMetaRegex, withString: firstGroupRegex, options: NSStringCompareOptions.RegularExpressionSearch, range: nil)
-
         return replacedString == userMeta ? "" : replacedString
-
     }
     
     private func isValidValue(value: String) -> Bool{
         return (value.characters.count >= minUserMetaLength && value.characters.count <= maxUserMetaLength)
     }
-    
 }
