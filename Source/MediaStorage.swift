@@ -7,57 +7,43 @@ import Foundation
 import RicohAPIAuth
 
 public struct MediaInfo {
-    
     public var id = ""
     public var contentType = ""
     public var bytes = 0
     public var createdAt = ""
-    
 }
 
 public struct MediaIndex {
-    
     public var id = ""
-    
 }
 
 public struct Paging {
-    
     public var next: String?
     public var previous: String?
-    
 }
 
 public struct MediaList {
-    
     public var mediaList = [MediaIndex]()
     public var paging = Paging()
-    
 }
 
 public struct MediaContent {
-    
     public var data = NSData()
-    
 }
 
 public struct MediaMeta {
-
     public var exif = [String: String]()
     public var gpano = [String: String]()
     public var userMeta = [String: String]()
-
 }
 
 public struct MediaStorageError {
-    
     public let statusCode: Int?
     public let message: String?
     
     public func isEmpty() -> Bool {
         return (statusCode == nil) && (message == nil)
     }
-    
 }
 
 public class MediaStorage {
