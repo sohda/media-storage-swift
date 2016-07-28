@@ -38,7 +38,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'YourAppName' do
-  pod 'RicohAPIMStorage', '~> 2.1.0'
+  pod 'RicohAPIMStorage', '~> 2.1.1'
 end
 ```
 * Run `pod install` to install `RicohAPIMStorage`.
