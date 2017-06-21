@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/ricohapi/media-storage-swift"
   s.license      = "MIT"
   s.author       = "Ricoh Company, Ltd."
+  s.deprecated   = true
 
   s.source      = { :git => "https://github.com/ricohapi/media-storage-swift.git", :tag => "v#{s.version}" }
   s.source_files  = "Source/*.swift"
