@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RicohAPIMStorage"
-  s.version      = "2.1.1"
+  s.version      = "2.1.2"
   s.summary      = "Ricoh Media Storage API Client"
   s.description  = "Ricoh Media Storage API Client in Swift"
   s.homepage     = "https://github.com/ricohapi/media-storage-swift"
